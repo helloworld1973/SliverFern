@@ -1,0 +1,63 @@
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\MapView.xaml.cs
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\AwesomeMaps.dll.config
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\AwesomeMaps.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\AwesomeMaps.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\ExifLib.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.Abstractions.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.GoogleMaps.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.xml
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.xml
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.Abstractions.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.Abstractions.xml
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.csproj.CoreCompileInputs.cache
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.MainPage.xaml.g.cs
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.App.xaml.g.cs
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.MapView.xaml.g.cs
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.dll
+C:\Users\Jason Ye\Downloads\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\MapView.xaml.cs
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\AwesomeMaps.dll.config
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\AwesomeMaps.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\AwesomeMaps.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\ExifLib.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.Abstractions.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.Abstractions.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Core.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.GoogleMaps.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Platform.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.xml
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Geolocator.Abstractions.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.xml
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.Abstractions.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Plugin.Permissions.Abstractions.xml
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Core.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Core.xml
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.csproj.CoreCompileInputs.cache
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.MainPage.xaml.g.cs
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.App.xaml.g.cs
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.MapView.xaml.g.cs
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.csprojResolveAssemblyReference.cache

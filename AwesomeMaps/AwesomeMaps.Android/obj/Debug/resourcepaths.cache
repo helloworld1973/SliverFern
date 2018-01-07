@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <AdditionalAndroidResourcePaths>
+    <AdditionalAndroidResourcePath>C:\Users\Jason Ye\AppData\Local\Xamarin\Xamarin.Android.Support.v7.CardView\23.3.0.0\embedded</AdditionalAndroidResourcePath>
+  </AdditionalAndroidResourcePaths>
+  <AdditionalJavaLibraryReferences>
+    <AdditionalJavaLibraryReference>C:\Users\Jason Ye\AppData\Local\Xamarin\Xamarin.Android.Support.v7.CardView\23.3.0.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+  </AdditionalJavaLibraryReferences>
+  <AdditionalNativeLibraryReferences />
+</Paths>
