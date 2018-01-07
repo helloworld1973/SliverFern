@@ -22,7 +22,12 @@ namespace AwesomeMaps
 
 		}
 
-		protected override void OnAppearing()
+        async void OpenCamera(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CameraPage());
+        }
+
+        protected override void OnAppearing()
 		{
 			base.OnAppearing();
 			///
