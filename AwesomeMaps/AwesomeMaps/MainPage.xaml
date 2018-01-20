@@ -37,7 +37,7 @@
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.23, Constant=0}"
                 />
 
-                <Image Source="camera.png" x:Name="camera" HeightRequest="65" WidthRequest="65" Clicked="OpenCamera"
+                <Image Source="camera.png" x:Name="camera" HeightRequest="65" WidthRequest="65" 
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.41, Constant=0}"
                 />

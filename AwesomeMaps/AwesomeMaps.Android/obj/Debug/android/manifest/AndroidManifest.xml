@@ -8,6 +8,9 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-feature android:name="android.hardware.camera" />
+  <uses-feature android:name="android.hardware.camera.autofocus" />
   <uses-feature android:name="android.hardware.location.gps" />
   <uses-feature android:name="android.hardware.location.network" />
   <application android:label="AwesomeMap" android:icon="@drawable/icon" android:name="md54a15667675b4835b04c42075c2ff3353.MyApp" android:allowBackup="true" android:debuggable="true">

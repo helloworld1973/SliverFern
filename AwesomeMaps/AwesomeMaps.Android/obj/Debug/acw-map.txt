@@ -1,3 +1,11 @@
+AwesomeMaps.Droid.CameraPageClassRenderer, AwesomeMaps.Android;md54a15667675b4835b04c42075c2ff3353.CameraPageClassRenderer
+AwesomeMaps.Droid.CameraPageClassRenderer, AwesomeMaps.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54a15667675b4835b04c42075c2ff3353.CameraPageClassRenderer
+AwesomeMaps.Droid.CameraPageClassRenderer;md54a15667675b4835b04c42075c2ff3353.CameraPageClassRenderer
+awesomemaps.droid.CameraPageClassRenderer;md54a15667675b4835b04c42075c2ff3353.CameraPageClassRenderer
+AwesomeMaps.Droid.PaintCodeButton, AwesomeMaps.Android;md54a15667675b4835b04c42075c2ff3353.PaintCodeButton
+AwesomeMaps.Droid.PaintCodeButton, AwesomeMaps.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54a15667675b4835b04c42075c2ff3353.PaintCodeButton
+AwesomeMaps.Droid.PaintCodeButton;md54a15667675b4835b04c42075c2ff3353.PaintCodeButton
+awesomemaps.droid.PaintCodeButton;md54a15667675b4835b04c42075c2ff3353.PaintCodeButton
 AwesomeMaps.Droid.MainActivity, AwesomeMaps.Android;md54a15667675b4835b04c42075c2ff3353.MainActivity
 AwesomeMaps.Droid.MainActivity, AwesomeMaps.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54a15667675b4835b04c42075c2ff3353.MainActivity
 AwesomeMaps.Droid.MainActivity;md54a15667675b4835b04c42075c2ff3353.MainActivity

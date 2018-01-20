@@ -4,9 +4,8 @@
              x:Class="AwesomeMaps.CameraPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image x:Name="Photo"></Image>
+            <Button x:Name="TakePhotoButton" Grid.Row="1" Text="Take photo"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

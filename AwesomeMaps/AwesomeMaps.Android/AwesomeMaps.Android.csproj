@@ -160,6 +160,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CameraPageClassRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MyApp.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

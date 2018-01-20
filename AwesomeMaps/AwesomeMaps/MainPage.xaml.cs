@@ -18,9 +18,17 @@ namespace AwesomeMaps
 
         public MainPage()
 		{
-			InitializeComponent();           
+			InitializeComponent();
 
-		}
+            var tap = new TapGestureRecognizer();
+
+            tap.Tapped += (object sender, EventArgs e) => 
+            {
+                this.Navigation.PushAsync(new CameraPage());
+            };
+            camera.GestureRecognizers.Add(tap);
+
+        }
 
         async void OpenCamera(object sender, EventArgs e)
         {

@@ -41,6 +41,7 @@
     <Compile Include="CameraPage.xaml.cs">
       <DependentUpon>CameraPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CameraPageClass.cs" />
     <Compile Include="MapView.xaml.cs">
       <DependentUpon>MapView.xaml</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

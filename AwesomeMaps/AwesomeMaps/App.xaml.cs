@@ -12,8 +12,7 @@ namespace AwesomeMaps
         public App()
         {
             InitializeComponent();
-            
-            MainPage = new AwesomeMaps.MainPage();
+            MainPage = new NavigationPage(new AwesomeMaps.MainPage());           
         }
 
         protected override void OnStart()
