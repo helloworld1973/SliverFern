@@ -28,11 +28,15 @@ namespace AwesomeMaps
             };
             camera.GestureRecognizers.Add(tap);
 
-        }
 
-        async void OpenCamera(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new CameraPage());
+            var tap2 = new TapGestureRecognizer();
+
+            tap2.Tapped += (object sender, EventArgs e) =>
+            {
+                this.Navigation.PushAsync(new LoginPage());
+            };
+            account.GestureRecognizers.Add(tap2);
+
         }
 
         protected override void OnAppearing()
