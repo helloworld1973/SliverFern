@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:AwesomeMaps"
              x:Class="AwesomeMaps.MainPage">
 
+    
     <ContentPage.Content>
         <RelativeLayout
             VerticalOptions="Fill"

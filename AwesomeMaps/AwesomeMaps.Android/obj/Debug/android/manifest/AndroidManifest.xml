@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:versionCode="1" android:versionName="1.0" package="com.awesome.google.map">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="1" android:versionName="1.0" package="com.awesome.google.map">
   <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -13,9 +13,9 @@
   <uses-feature android:name="android.hardware.camera.autofocus" />
   <uses-feature android:name="android.hardware.location.gps" />
   <uses-feature android:name="android.hardware.location.network" />
-  <application android:label="AwesomeMap" android:icon="@drawable/icon" android:name="md54a15667675b4835b04c42075c2ff3353.MyApp" android:allowBackup="true" android:debuggable="true">
+  <application android:icon="@drawable/newicon" android:label="SilverFern" android:name="md54a15667675b4835b04c42075c2ff3353.MyApp" android:allowBackup="true" android:debuggable="true">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBhI_hEm0TkUfYkT9hvn5PS5GMKMs9zquk" />
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="AwesomeMaps" android:theme="@style/MainTheme" android:name="md54a15667675b4835b04c42075c2ff3353.MainActivity">
+    <activity android:name="md54a15667675b4835b04c42075c2ff3353.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

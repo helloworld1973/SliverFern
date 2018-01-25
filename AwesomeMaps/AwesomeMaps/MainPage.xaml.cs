@@ -21,7 +21,6 @@ namespace AwesomeMaps
 			InitializeComponent();
 
             var tap = new TapGestureRecognizer();
-
             tap.Tapped += (object sender, EventArgs e) => 
             {
                 this.Navigation.PushAsync(new CameraPage());
@@ -30,12 +29,19 @@ namespace AwesomeMaps
 
 
             var tap2 = new TapGestureRecognizer();
-
             tap2.Tapped += (object sender, EventArgs e) =>
             {
                 this.Navigation.PushAsync(new LoginPage());
             };
             account.GestureRecognizers.Add(tap2);
+
+
+            var tap3 = new TapGestureRecognizer();
+            tap3.Tapped += (object sender, EventArgs e) =>
+            {
+                this.Navigation.PushAsync(new test());
+            };
+            candy.GestureRecognizers.Add(tap3);
 
         }
 

@@ -12,8 +12,8 @@
                 
                 <Button BorderRadius="40" x:Name="imageCircleBack"
             BackgroundColor="Maroon" HeightRequest="90" WidthRequest="70" 
-            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=.0, Constant = 40}" 
-            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0, Property=Y, Constant=10}" />
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=.0, Constant = 300}" 
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0, Property=Y, Constant=0}" />
                 
                 
                 <Button BorderRadius="30" BackgroundColor="Red" HeightRequest="60"
@@ -22,8 +22,13 @@
                 
                 <Label Text="User Name" FontAttributes="Bold" FontSize="26"
             HorizontalTextAlignment="Center" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=140}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
+                
+                
+                
                 <Entry Text="Bio + Hashtags" TextColor="White" BackgroundColor="Maroon"
             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=180}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
+               
+                
                 <RelativeLayout BackgroundColor="White" RelativeLayout.YConstraint="
             {ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=220}" HeightRequest="60" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
                     <BoxView BackgroundColor="Black" WidthRequest="50"

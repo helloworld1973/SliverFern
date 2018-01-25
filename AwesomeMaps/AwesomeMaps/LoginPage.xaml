@@ -4,21 +4,21 @@
              x:Class="AwesomeMaps.LoginPage">
     <ContentPage.Content>
         <RelativeLayout BackgroundColor="White">
-            <Image Source="newicon.png" x:Name="newicon" HeightRequest="100" WidthRequest="100"
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.2,Constant=0}"
-                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.2, Constant=0}"
+            <Image Source="newicon.png" x:Name="newicon" HeightRequest="200" WidthRequest="200" 
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.1,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.1, Constant=0}"
                 />
-            <Entry Text="user name" x:Name="username" FontSize="60" TextColor="Gray"
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.3,Constant=0}"
-                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+            <Entry Text="user name" x:Name="username" FontSize="10" TextColor="Gray"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.52,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.32, Constant=0}"
                 />
-            <Entry Text="password"  x:Name="password" FontSize="60" TextColor="Gray"
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.4,Constant=0}"
-                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+            <Entry Text="password"  x:Name="password" FontSize="10" TextColor="Gray"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.58,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.32, Constant=0}"
                 />
-            <Button Text="Login" x:Name="loginbutton" Clicked="Button_Clicked"
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.6,Constant=0}"
-                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+            <Button Text="Login" x:Name="loginbutton" Clicked="Button_Clicked" FontSize="10"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.7,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.36, Constant=0}"
                 />     
                    
         </RelativeLayout>

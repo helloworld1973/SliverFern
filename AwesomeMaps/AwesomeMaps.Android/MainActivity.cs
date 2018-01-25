@@ -6,23 +6,22 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms.Platform.Android.AppCompat;
 
 namespace AwesomeMaps.Droid
 {
-    [Activity(Label = "AwesomeMaps", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    [Activity(MainLauncher = true)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
             
             global::Xamarin.Forms.Forms.Init(this, bundle);
             
             Xamarin.FormsGoogleMaps.Init(this, bundle);
-            //
+
             LoadApplication(new App());
         }
     }

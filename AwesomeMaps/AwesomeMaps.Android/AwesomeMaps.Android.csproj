@@ -178,11 +178,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Tabbar.axml" />
-    <AndroidResource Include="Resources\layout\Toolbar.axml" />
-    <AndroidResource Include="Resources\values\styles.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\AwesomeMaps\AwesomeMaps.csproj">
       <Project>{bd54afff-5ca3-4d0f-ae9f-cc9b2c396e05}</Project>
       <Name>AwesomeMaps</Name>

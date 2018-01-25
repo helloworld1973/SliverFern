@@ -3361,7 +3361,7 @@ containing a value of this type.
         public static int line3=0x7f0c00b7;
         public static int listMode=0x7f0c001c;
         public static int list_item=0x7f0c0052;
-        public static int masked=0x7f0c00bd;
+        public static int masked=0x7f0c00bb;
         public static int media_actions=0x7f0c00a9;
         public static int middle=0x7f0c002d;
         public static int mini=0x7f0c0048;
@@ -3429,7 +3429,6 @@ containing a value of this type.
         public static int showCustom=0x7f0c0020;
         public static int showHome=0x7f0c0021;
         public static int showTitle=0x7f0c0022;
-        public static int sliding_tabs=0x7f0c00ba;
         public static int smallLabel=0x7f0c007d;
         public static int snackbar_action=0x7f0c0082;
         public static int snackbar_text=0x7f0c0081;
@@ -3457,7 +3456,6 @@ containing a value of this type.
         public static int title=0x7f0c0054;
         public static int titleDividerNoCustom=0x7f0c0063;
         public static int title_template=0x7f0c0061;
-        public static int toolbar=0x7f0c00bb;
         public static int top=0x7f0c0034;
         public static int topPanel=0x7f0c0060;
         public static int touch_outside=0x7f0c007f;
@@ -3466,7 +3464,7 @@ containing a value of this type.
         public static int up=0x7f0c0009;
         public static int useLogo=0x7f0c0023;
         public static int view_offset_helper=0x7f0c000e;
-        public static int visible=0x7f0c00bc;
+        public static int visible=0x7f0c00ba;
         public static int volume_item_container=0x7f0c009b;
         public static int wide=0x7f0c0018;
         public static int withText=0x7f0c0032;
@@ -3558,8 +3556,6 @@ containing a value of this type.
         public static int select_dialog_multichoice_material=0x7f03003f;
         public static int select_dialog_singlechoice_material=0x7f030040;
         public static int support_simple_spinner_dropdown_item=0x7f030041;
-        public static int tabbar=0x7f030042;
-        public static int toolbar=0x7f030043;
     }
     public static final class string {
         public static int abc_action_bar_home_description=0x7f0b0026;
@@ -3648,7 +3644,6 @@ containing a value of this type.
         public static int Animation_AppCompat_Dialog=0x7f0700b0;
         public static int Animation_AppCompat_DropDownUp=0x7f0700b1;
         public static int Animation_Design_BottomSheetDialog=0x7f070170;
-        public static int AppCompatDialogStyle=0x7f07018b;
         public static int Base_AlertDialog_AppCompat=0x7f0700b2;
         public static int Base_AlertDialog_AppCompat_Light=0x7f0700b3;
         public static int Base_Animation_AppCompat_Dialog=0x7f0700b4;
@@ -3807,10 +3802,6 @@ containing a value of this type.
         public static int CardView=0x7f070000;
         public static int CardView_Dark=0x7f070002;
         public static int CardView_Light=0x7f070003;
-        public static int MainTheme=0x7f070189;
-        /**  Base theme applied no matter what API 
-         */
-        public static int MainTheme_Base=0x7f07018a;
         public static int Platform_AppCompat=0x7f07002d;
         public static int Platform_AppCompat_Light=0x7f07002e;
         public static int Platform_ThemeOverlay_AppCompat=0x7f070094;

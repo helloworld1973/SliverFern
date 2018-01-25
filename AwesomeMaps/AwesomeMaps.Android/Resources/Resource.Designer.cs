@@ -3213,8 +3213,8 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f0c0052
 			public const int list_item = 2131492946;
 			
-			// aapt resource value: 0x7f0c00bd
-			public const int masked = 2131493053;
+			// aapt resource value: 0x7f0c00bb
+			public const int masked = 2131493051;
 			
 			// aapt resource value: 0x7f0c00a9
 			public const int media_actions = 2131493033;
@@ -3417,9 +3417,6 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f0c0022
 			public const int showTitle = 2131492898;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int sliding_tabs = 2131493050;
-			
 			// aapt resource value: 0x7f0c007d
 			public const int smallLabel = 2131492989;
 			
@@ -3501,9 +3498,6 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f0c0061
 			public const int title_template = 2131492961;
 			
-			// aapt resource value: 0x7f0c00bb
-			public const int toolbar = 2131493051;
-			
 			// aapt resource value: 0x7f0c0034
 			public const int top = 2131492916;
 			
@@ -3528,8 +3522,8 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f0c000e
 			public const int view_offset_helper = 2131492878;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int visible = 2131493052;
+			// aapt resource value: 0x7f0c00ba
+			public const int visible = 2131493050;
 			
 			// aapt resource value: 0x7f0c009b
 			public const int volume_item_container = 2131493019;
@@ -3825,12 +3819,6 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f030041
 			public const int support_simple_spinner_dropdown_item = 2130903105;
 			
-			// aapt resource value: 0x7f030042
-			public const int Tabbar = 2130903106;
-			
-			// aapt resource value: 0x7f030043
-			public const int Toolbar = 2130903107;
-			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -4108,9 +4096,6 @@ namespace AwesomeMaps.Droid
 			
 			// aapt resource value: 0x7f070170
 			public const int Animation_Design_BottomSheetDialog = 2131165552;
-			
-			// aapt resource value: 0x7f07018b
-			public const int AppCompatDialogStyle = 2131165579;
 			
 			// aapt resource value: 0x7f0700b2
 			public const int Base_AlertDialog_AppCompat = 2131165362;
@@ -4585,12 +4570,6 @@ namespace AwesomeMaps.Droid
 			
 			// aapt resource value: 0x7f070003
 			public const int CardView_Light = 2131165187;
-			
-			// aapt resource value: 0x7f070189
-			public const int MainTheme = 2131165577;
-			
-			// aapt resource value: 0x7f07018a
-			public const int MainTheme_Base = 2131165578;
 			
 			// aapt resource value: 0x7f07002d
 			public const int Platform_AppCompat = 2131165229;

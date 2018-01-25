@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2018/1/4 21:13:01</xs:documentation>
+    <xs:documentation>2018/1/26 1:21:35</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,7 +82,6 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
-      <xs:element ref="com.xamarin.forms.platform.android.FormsViewGroup" />
       <xs:element ref="com.google.android.gms.maps.StreetViewPanoramaView" />
       <xs:element ref="com.google.android.gms.maps.MapView" />
       <xs:element ref="com.google.android.gms.common.SignInButton" />
@@ -112,7 +111,7 @@
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
       <xs:element ref="android.support.v7.view.menu.ActionMenuItemView" />
-      <xs:element ref="android.support.v7.widget.CardView" />
+      <xs:element ref="android.support.v7.widget.RecyclerView" />
       <xs:element ref="android.support.v7.widget.ViewStubCompat" />
       <xs:element ref="android.support.v7.widget.SwitchCompat" />
       <xs:element ref="android.support.v7.widget.SearchView" />
@@ -136,7 +135,7 @@
       <xs:element ref="android.support.v7.widget.ActionBarContainer" />
       <xs:element ref="android.support.v7.widget.AbsActionBarView" />
       <xs:element ref="android.support.v7.widget.Toolbar" />
-      <xs:element ref="android.support.v7.widget.RecyclerView" />
+      <xs:element ref="android.support.v7.widget.CardView" />
       <xs:element ref="android.support.v7.app.MediaRouteButton" />
       <xs:element ref="android.support.v4.widget.Space" />
       <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
@@ -148,7 +147,9 @@
       <xs:element ref="android.support.v4.view.PagerTitleStrip" />
       <xs:element ref="android.support.v4.view.PagerTabStrip" />
       <xs:element ref="android.support.v4.app.FragmentTabHost" />
-      <xs:element ref="AwesomeMaps.Droid.CustomRenderer.ImageCircleRenderer" />
+      <xs:element ref="com.xamarin.forms.platform.android.FormsViewGroup" />
+      <xs:element ref="AwesomeMaps.Droid.PaintCodeButton" />
+      <xs:element ref="AwesomeMaps.Droid.CameraPageClassRenderer" />
       <xs:element ref="include" />
     </xs:choice>
   </xs:group>
@@ -1450,16 +1451,6 @@
     <xs:attribute ref="android:layout_height" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
-  <xs:element name="com.xamarin.forms.platform.android.FormsViewGroup" type="com.xamarin.forms.platform.android.FormsViewGroup">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Forms.Platform.Android.FormsViewGroup</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.xamarin.forms.platform.android.FormsViewGroup">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
   <xs:element name="com.google.android.gms.maps.StreetViewPanoramaView" type="com.google.android.gms.maps.StreetViewPanoramaView">
     <xs:annotation>
       <xs:documentation>Runtime Type: Android.Gms.Maps.StreetViewPanoramaView</xs:documentation>
@@ -1839,14 +1830,20 @@
       <xs:extension base="TextView" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.widget.CardView" type="android.support.v7.widget.CardView">
+  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.CardView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.widget.CardView">
+  <xs:complexType name="android.support.v7.widget.RecyclerView">
     <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:layoutManager" />
+        <xs:attribute ref="app:spanCount" />
+        <xs:attribute ref="app:reverseLayout" />
+        <xs:attribute ref="app:stackFromEnd" />
+        <xs:attribute ref="tools:listitem" />
+      </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
@@ -2143,20 +2140,14 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
+  <xs:element name="android.support.v7.widget.CardView" type="android.support.v7.widget.CardView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.CardView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.widget.RecyclerView">
+  <xs:complexType name="android.support.v7.widget.CardView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="app:layoutManager" />
-        <xs:attribute ref="app:spanCount" />
-        <xs:attribute ref="app:reverseLayout" />
-        <xs:attribute ref="app:stackFromEnd" />
-        <xs:attribute ref="tools:listitem" />
-      </xs:extension>
+      <xs:extension base="FrameLayout" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.app.MediaRouteButton" type="android.support.v7.app.MediaRouteButton">
@@ -2274,12 +2265,32 @@
       <xs:extension base="TabHost" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="AwesomeMaps.Droid.CustomRenderer.ImageCircleRenderer" type="AwesomeMaps.Droid.CustomRenderer.ImageCircleRenderer">
+  <xs:element name="com.xamarin.forms.platform.android.FormsViewGroup" type="com.xamarin.forms.platform.android.FormsViewGroup">
     <xs:annotation>
-      <xs:documentation>Runtime Type: AwesomeMaps.Droid.CustomRenderer.ImageCircleRenderer</xs:documentation>
+      <xs:documentation>Runtime Type: Xamarin.Forms.Platform.Android.FormsViewGroup</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="AwesomeMaps.Droid.CustomRenderer.ImageCircleRenderer">
+  <xs:complexType name="com.xamarin.forms.platform.android.FormsViewGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AwesomeMaps.Droid.PaintCodeButton" type="AwesomeMaps.Droid.PaintCodeButton">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: AwesomeMaps.Droid.PaintCodeButton</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="AwesomeMaps.Droid.PaintCodeButton">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Button" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AwesomeMaps.Droid.CameraPageClassRenderer" type="AwesomeMaps.Droid.CameraPageClassRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: AwesomeMaps.Droid.CameraPageClassRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="AwesomeMaps.Droid.CameraPageClassRenderer">
     <xs:complexContent mixed="false">
       <xs:extension base="ViewGroup" />
     </xs:complexContent>
