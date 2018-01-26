@@ -1251,44 +1251,44 @@ namespace AwesomeMaps.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f080052
-			public const int abc_background_cache_hint_selector_material_dark = 2131230802;
-			
 			// aapt resource value: 0x7f080053
-			public const int abc_background_cache_hint_selector_material_light = 2131230803;
+			public const int abc_background_cache_hint_selector_material_dark = 2131230803;
 			
 			// aapt resource value: 0x7f080054
-			public const int abc_btn_colored_borderless_text_material = 2131230804;
+			public const int abc_background_cache_hint_selector_material_light = 2131230804;
 			
 			// aapt resource value: 0x7f080055
-			public const int abc_btn_colored_text_material = 2131230805;
+			public const int abc_btn_colored_borderless_text_material = 2131230805;
 			
 			// aapt resource value: 0x7f080056
-			public const int abc_color_highlight_material = 2131230806;
+			public const int abc_btn_colored_text_material = 2131230806;
 			
 			// aapt resource value: 0x7f080057
-			public const int abc_hint_foreground_material_dark = 2131230807;
+			public const int abc_color_highlight_material = 2131230807;
 			
 			// aapt resource value: 0x7f080058
-			public const int abc_hint_foreground_material_light = 2131230808;
+			public const int abc_hint_foreground_material_dark = 2131230808;
+			
+			// aapt resource value: 0x7f080059
+			public const int abc_hint_foreground_material_light = 2131230809;
 			
 			// aapt resource value: 0x7f08000d
 			public const int abc_input_method_navigation_guard = 2131230733;
 			
-			// aapt resource value: 0x7f080059
-			public const int abc_primary_text_disable_only_material_dark = 2131230809;
-			
 			// aapt resource value: 0x7f08005a
-			public const int abc_primary_text_disable_only_material_light = 2131230810;
+			public const int abc_primary_text_disable_only_material_dark = 2131230810;
 			
 			// aapt resource value: 0x7f08005b
-			public const int abc_primary_text_material_dark = 2131230811;
+			public const int abc_primary_text_disable_only_material_light = 2131230811;
 			
 			// aapt resource value: 0x7f08005c
-			public const int abc_primary_text_material_light = 2131230812;
+			public const int abc_primary_text_material_dark = 2131230812;
 			
 			// aapt resource value: 0x7f08005d
-			public const int abc_search_url_text = 2131230813;
+			public const int abc_primary_text_material_light = 2131230813;
+			
+			// aapt resource value: 0x7f08005e
+			public const int abc_search_url_text = 2131230814;
 			
 			// aapt resource value: 0x7f08000e
 			public const int abc_search_url_text_normal = 2131230734;
@@ -1299,32 +1299,32 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f080010
 			public const int abc_search_url_text_selected = 2131230736;
 			
-			// aapt resource value: 0x7f08005e
-			public const int abc_secondary_text_material_dark = 2131230814;
-			
 			// aapt resource value: 0x7f08005f
-			public const int abc_secondary_text_material_light = 2131230815;
+			public const int abc_secondary_text_material_dark = 2131230815;
 			
 			// aapt resource value: 0x7f080060
-			public const int abc_tint_btn_checkable = 2131230816;
+			public const int abc_secondary_text_material_light = 2131230816;
 			
 			// aapt resource value: 0x7f080061
-			public const int abc_tint_default = 2131230817;
+			public const int abc_tint_btn_checkable = 2131230817;
 			
 			// aapt resource value: 0x7f080062
-			public const int abc_tint_edittext = 2131230818;
+			public const int abc_tint_default = 2131230818;
 			
 			// aapt resource value: 0x7f080063
-			public const int abc_tint_seek_thumb = 2131230819;
+			public const int abc_tint_edittext = 2131230819;
 			
 			// aapt resource value: 0x7f080064
-			public const int abc_tint_spinner = 2131230820;
+			public const int abc_tint_seek_thumb = 2131230820;
 			
 			// aapt resource value: 0x7f080065
-			public const int abc_tint_switch_thumb = 2131230821;
+			public const int abc_tint_spinner = 2131230821;
 			
 			// aapt resource value: 0x7f080066
-			public const int abc_tint_switch_track = 2131230822;
+			public const int abc_tint_switch_thumb = 2131230822;
+			
+			// aapt resource value: 0x7f080067
+			public const int abc_tint_switch_track = 2131230823;
 			
 			// aapt resource value: 0x7f080011
 			public const int accent_material_dark = 2131230737;
@@ -1380,8 +1380,8 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f080003
 			public const int cardview_shadow_start_color = 2131230723;
 			
-			// aapt resource value: 0x7f080067
-			public const int common_google_signin_btn_text_dark = 2131230823;
+			// aapt resource value: 0x7f080068
+			public const int common_google_signin_btn_text_dark = 2131230824;
 			
 			// aapt resource value: 0x7f080004
 			public const int common_google_signin_btn_text_dark_default = 2131230724;
@@ -1395,8 +1395,8 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f080007
 			public const int common_google_signin_btn_text_dark_pressed = 2131230727;
 			
-			// aapt resource value: 0x7f080068
-			public const int common_google_signin_btn_text_light = 2131230824;
+			// aapt resource value: 0x7f080069
+			public const int common_google_signin_btn_text_light = 2131230825;
 			
 			// aapt resource value: 0x7f080008
 			public const int common_google_signin_btn_text_light_default = 2131230728;
@@ -1410,14 +1410,14 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f08000b
 			public const int common_google_signin_btn_text_light_pressed = 2131230731;
 			
-			// aapt resource value: 0x7f080069
-			public const int common_google_signin_btn_tint = 2131230825;
+			// aapt resource value: 0x7f08006a
+			public const int common_google_signin_btn_tint = 2131230826;
 			
 			// aapt resource value: 0x7f080047
 			public const int design_bottom_navigation_shadow_color = 2131230791;
 			
-			// aapt resource value: 0x7f08006a
-			public const int design_error = 2131230826;
+			// aapt resource value: 0x7f08006b
+			public const int design_error = 2131230827;
 			
 			// aapt resource value: 0x7f080048
 			public const int design_fab_shadow_end_color = 2131230792;
@@ -1449,8 +1449,8 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f080051
 			public const int design_textinput_error_color_light = 2131230801;
 			
-			// aapt resource value: 0x7f08006b
-			public const int design_tint_password_toggle = 2131230827;
+			// aapt resource value: 0x7f08006c
+			public const int design_tint_password_toggle = 2131230828;
 			
 			// aapt resource value: 0x7f08001f
 			public const int dim_foreground_disabled_material_dark = 2131230751;
@@ -1563,17 +1563,20 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f080042
 			public const int secondary_text_disabled_material_light = 2131230786;
 			
+			// aapt resource value: 0x7f080052
+			public const int splash_background = 2131230802;
+			
 			// aapt resource value: 0x7f080043
 			public const int switch_thumb_disabled_material_dark = 2131230787;
 			
 			// aapt resource value: 0x7f080044
 			public const int switch_thumb_disabled_material_light = 2131230788;
 			
-			// aapt resource value: 0x7f08006c
-			public const int switch_thumb_material_dark = 2131230828;
-			
 			// aapt resource value: 0x7f08006d
-			public const int switch_thumb_material_light = 2131230829;
+			public const int switch_thumb_material_dark = 2131230829;
+			
+			// aapt resource value: 0x7f08006e
+			public const int switch_thumb_material_light = 2131230830;
 			
 			// aapt resource value: 0x7f080045
 			public const int switch_thumb_normal_material_dark = 2131230789;
@@ -2306,26 +2309,26 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020129
-			public const int avd_hide_password_1 = 2130837801;
-			
-			// aapt resource value: 0x7f02012a
-			public const int avd_hide_password_2 = 2130837802;
-			
 			// aapt resource value: 0x7f02012b
-			public const int avd_hide_password_3 = 2130837803;
+			public const int avd_hide_password_1 = 2130837803;
+			
+			// aapt resource value: 0x7f02012c
+			public const int avd_hide_password_2 = 2130837804;
+			
+			// aapt resource value: 0x7f02012d
+			public const int avd_hide_password_3 = 2130837805;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f02012c
-			public const int avd_show_password_1 = 2130837804;
-			
-			// aapt resource value: 0x7f02012d
-			public const int avd_show_password_2 = 2130837805;
-			
 			// aapt resource value: 0x7f02012e
-			public const int avd_show_password_3 = 2130837806;
+			public const int avd_show_password_1 = 2130837806;
+			
+			// aapt resource value: 0x7f02012f
+			public const int avd_show_password_2 = 2130837807;
+			
+			// aapt resource value: 0x7f020130
+			public const int avd_show_password_3 = 2130837808;
 			
 			// aapt resource value: 0x7f020056
 			public const int camera = 2130837590;
@@ -2945,11 +2948,11 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f020123
 			public const int notification_icon_background = 2130837795;
 			
-			// aapt resource value: 0x7f020127
-			public const int notification_template_icon_bg = 2130837799;
+			// aapt resource value: 0x7f020129
+			public const int notification_template_icon_bg = 2130837801;
 			
-			// aapt resource value: 0x7f020128
-			public const int notification_template_icon_low_bg = 2130837800;
+			// aapt resource value: 0x7f02012a
+			public const int notification_template_icon_low_bg = 2130837802;
 			
 			// aapt resource value: 0x7f020124
 			public const int notification_tile_bg = 2130837796;
@@ -2959,6 +2962,12 @@ namespace AwesomeMaps.Droid
 			
 			// aapt resource value: 0x7f020126
 			public const int outdooractivities = 2130837798;
+			
+			// aapt resource value: 0x7f020127
+			public const int splash_picture = 2130837799;
+			
+			// aapt resource value: 0x7f020128
+			public const int splash_screen = 2130837800;
 			
 			static Drawable()
 			{
@@ -4657,6 +4666,9 @@ namespace AwesomeMaps.Droid
 			
 			// aapt resource value: 0x7f07004d
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131165261;
+			
+			// aapt resource value: 0x7f07018a
+			public const int SplashTheme = 2131165578;
 			
 			// aapt resource value: 0x7f0700dd
 			public const int TextAppearance_AppCompat = 2131165405;

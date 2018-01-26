@@ -14,6 +14,10 @@ AwesomeMaps.Droid.MyApp, AwesomeMaps.Android;md54a15667675b4835b04c42075c2ff3353
 AwesomeMaps.Droid.MyApp, AwesomeMaps.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54a15667675b4835b04c42075c2ff3353.MyApp
 AwesomeMaps.Droid.MyApp;md54a15667675b4835b04c42075c2ff3353.MyApp
 awesomemaps.droid.MyApp;md54a15667675b4835b04c42075c2ff3353.MyApp
+AwesomeMaps.Droid.SplashActivity, AwesomeMaps.Android;md54a15667675b4835b04c42075c2ff3353.SplashActivity
+AwesomeMaps.Droid.SplashActivity, AwesomeMaps.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54a15667675b4835b04c42075c2ff3353.SplashActivity
+AwesomeMaps.Droid.SplashActivity;md54a15667675b4835b04c42075c2ff3353.SplashActivity
+awesomemaps.droid.SplashActivity;md54a15667675b4835b04c42075c2ff3353.SplashActivity
 Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator;md5236ac2e55428dd78ad9953f44467edac.GeolocationContinuousListener
 Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null;md5236ac2e55428dd78ad9953f44467edac.GeolocationContinuousListener
 Plugin.Geolocator.GeolocationContinuousListener;md5236ac2e55428dd78ad9953f44467edac.GeolocationContinuousListener
