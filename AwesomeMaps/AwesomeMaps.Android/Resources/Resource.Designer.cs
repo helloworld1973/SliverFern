@@ -4571,6 +4571,9 @@ namespace AwesomeMaps.Droid
 			// aapt resource value: 0x7f070003
 			public const int CardView_Light = 2131165187;
 			
+			// aapt resource value: 0x7f070189
+			public const int MainTheme = 2131165577;
+			
 			// aapt resource value: 0x7f07002d
 			public const int Platform_AppCompat = 2131165229;
 			

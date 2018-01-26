@@ -10,7 +10,7 @@ using Xamarin.Forms.Platform.Android.AppCompat;
 
 namespace AwesomeMaps.Droid
 {
-    [Activity(MainLauncher = true)]
+    [Activity(MainLauncher = true, Theme = "@style/MainTheme")]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)

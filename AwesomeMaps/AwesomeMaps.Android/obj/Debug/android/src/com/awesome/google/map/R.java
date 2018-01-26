@@ -3802,6 +3802,7 @@ containing a value of this type.
         public static final int CardView=0x7f070000;
         public static final int CardView_Dark=0x7f070002;
         public static final int CardView_Light=0x7f070003;
+        public static final int MainTheme=0x7f070189;
         public static final int Platform_AppCompat=0x7f07002d;
         public static final int Platform_AppCompat_Light=0x7f07002e;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f070094;
