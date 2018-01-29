@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xamarin.Forms.Daddoon.IconTabbedPage</name>
+    </assembly>
+    <members>
+        <member name="P:Xamarin.Forms.Daddoon.IconTabbedPage.UnselectedTextColor">
+            <summary>
+            Default color of unselected text/images on the bar
+            </summary>
+        </member>
+        <member name="P:Xamarin.Forms.Daddoon.IconTabbedPage.HideText">
+            <summary>
+            Hide Tab text and only show the image (iOS Only)
+            </summary>
+        </member>
+        <member name="P:Xamarin.Forms.Daddoon.IconTabbedPage.TranslucideBarOniOS">
+            <summary>
+            Translucide Bar On iOS. Default is true
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -250,6 +250,10 @@ Android.Support.V7.Widget.RecyclerView/IRecyclerListenerImplementor, Xamarin.And
 Android.Support.V7.Widget.RecyclerView+IRecyclerListenerImplementor, Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor
 Android.Support.V7.Widget.RecyclerView.IRecyclerListenerImplementor;mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor
 mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor;mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor
+Xamarin.Forms.Daddoon.Droid.AndroidIconTabbedPageRenderer, Xamarin.Forms.Daddoon.Droid.IconTabbedPage;md56f799da8fec648b83747a61065725ac5.AndroidIconTabbedPageRenderer
+Xamarin.Forms.Daddoon.Droid.AndroidIconTabbedPageRenderer, Xamarin.Forms.Daddoon.Droid.IconTabbedPage, Version=1.0.0.4, Culture=neutral, PublicKeyToken=null;md56f799da8fec648b83747a61065725ac5.AndroidIconTabbedPageRenderer
+Xamarin.Forms.Daddoon.Droid.AndroidIconTabbedPageRenderer;md56f799da8fec648b83747a61065725ac5.AndroidIconTabbedPageRenderer
+xamarin.forms.daddoon.droid.AndroidIconTabbedPageRenderer;md56f799da8fec648b83747a61065725ac5.AndroidIconTabbedPageRenderer
 Xamarin.Forms.GoogleMaps.Android.MapRenderer, Xamarin.Forms.GoogleMaps.Android;md59e1546199385abe7b23a89990a0f94aa.MapRenderer
 Xamarin.Forms.GoogleMaps.Android.MapRenderer, Xamarin.Forms.GoogleMaps.Android, Version=2.1.0.0, Culture=neutral, PublicKeyToken=null;md59e1546199385abe7b23a89990a0f94aa.MapRenderer
 Xamarin.Forms.GoogleMaps.Android.MapRenderer;md59e1546199385abe7b23a89990a0f94aa.MapRenderer

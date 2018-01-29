@@ -24,6 +24,8 @@ Xamarin.Android.Support.v7.Palette
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Forms.Core
+Xamarin.Forms.Daddoon.Droid.IconTabbedPage
+Xamarin.Forms.Daddoon.IconTabbedPage
 Xamarin.Forms.GoogleMaps.Android
 Xamarin.Forms.GoogleMaps
 Xamarin.Forms.Platform.Android

@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace AwesomeMaps.Droid
 {
-    [Activity(MainLauncher = true, NoHistory = true, Theme = "@style/SplashTheme")]
+    [Activity(MainLauncher = true, NoHistory = true, Theme = "@style/SplashTheme")]//
     public class SplashActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         static readonly string TAG = "X:" + typeof(SplashActivity).Name;
@@ -30,17 +30,12 @@ namespace AwesomeMaps.Droid
         protected override void OnResume()
         {
             base.OnResume();
-            Task startupWork = new Task(() => { SimulateStartup(); });
-            startupWork.Start();
-        }
+            Task startupWork = new Task(() => 
+            {
+                StartActivity(new Intent(Application.Context, typeof(MainActivity)));
 
-        // Simulates background work that happens behind the splash screen
-        async void SimulateStartup()
-        {
-            Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
-            await Task.Delay(8000); // Simulate a bit of startup work.
-            Log.Debug(TAG, "Startup work is finished - starting MainActivity.");
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+            });
+            startupWork.Start();
         }
     }
 }

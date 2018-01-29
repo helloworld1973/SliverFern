@@ -12,7 +12,7 @@ namespace AwesomeMaps
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new AwesomeMaps.MainPage());           
+            MainPage = new MainIconTabbedPage();//AwesomeMaps.MainTabbedPage();  //new NavigationPage(new AwesomeMaps.MainPage());          
         }
 
         protected override void OnStart()

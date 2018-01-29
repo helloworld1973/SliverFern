@@ -128,6 +128,12 @@
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Forms.Daddoon.IconTabbedPage, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms-IconTabbedPage.1.0.4\lib\xamarinios10\Xamarin.Forms.Daddoon.IconTabbedPage.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Daddoon.iOS.IconTabbedPage, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms-IconTabbedPage.1.0.4\lib\xamarinios10\Xamarin.Forms.Daddoon.iOS.IconTabbedPage.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
     </Reference>

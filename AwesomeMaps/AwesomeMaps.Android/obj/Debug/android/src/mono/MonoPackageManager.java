@@ -132,6 +132,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.Daddoon.Droid.IconTabbedPage.dll",
+		"Xamarin.Forms.Daddoon.IconTabbedPage.dll",
 		"Xamarin.Forms.GoogleMaps.Android.dll",
 		"Xamarin.Forms.GoogleMaps.dll",
 		"Xamarin.Forms.Platform.Android.dll",

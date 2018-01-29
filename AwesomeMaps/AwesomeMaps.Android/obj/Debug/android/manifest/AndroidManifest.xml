@@ -13,7 +13,7 @@
   <uses-feature android:name="android.hardware.camera.autofocus" />
   <uses-feature android:name="android.hardware.location.gps" />
   <uses-feature android:name="android.hardware.location.network" />
-  <application android:icon="@drawable/newicon" android:label="SilverFern" android:name="md54a15667675b4835b04c42075c2ff3353.MyApp" android:allowBackup="true" android:debuggable="true">
+  <application android:icon="@drawable/newicon" android:label="SilverFern" android:theme="@style/MainTheme" android:name="md54a15667675b4835b04c42075c2ff3353.MyApp" android:allowBackup="true" android:debuggable="true">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBhI_hEm0TkUfYkT9hvn5PS5GMKMs9zquk" />
     <activity android:theme="@style/MainTheme" android:name="md54a15667675b4835b04c42075c2ff3353.MainActivity" />
     <activity android:noHistory="true" android:theme="@style/SplashTheme" android:name="md54a15667675b4835b04c42075c2ff3353.SplashActivity">
