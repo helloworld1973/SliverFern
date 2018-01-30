@@ -8,11 +8,11 @@
             <RelativeLayout>
                 <BoxView Color="Gray" HeightRequest="200"
             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
-                
-                
-                <Button BorderRadius="40" x:Name="imageCircleBack"
-            BackgroundColor="Maroon" HeightRequest="90" WidthRequest="70" 
-            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=.0, Constant = 300}" 
+
+
+                <Button BorderRadius="40" x:Name="imageCircleBack" Image="ic_photo_camera.png"
+            BackgroundColor="Maroon" HeightRequest="70" WidthRequest="70" 
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=.0, Constant = 30}" 
             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0, Property=Y, Constant=0}" />
                 
                 

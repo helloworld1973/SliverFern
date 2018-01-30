@@ -3,6 +3,7 @@ using Plugin.Permissions.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,30 +20,7 @@ namespace AwesomeMaps
         public MainPage()
 		{
 			InitializeComponent();
-
-            var tap = new TapGestureRecognizer();
-            tap.Tapped += (object sender, EventArgs e) => 
-            {
-                this.Navigation.PushAsync(new CameraPage());
-            };
-            camera.GestureRecognizers.Add(tap);
-
-
-            var tap2 = new TapGestureRecognizer();
-            tap2.Tapped += (object sender, EventArgs e) =>
-            {
-                this.Navigation.PushAsync(new LoginPage());
-            };
-            account.GestureRecognizers.Add(tap2);
-
-
-            var tap3 = new TapGestureRecognizer();
-            tap3.Tapped += (object sender, EventArgs e) =>
-            {
-                this.Navigation.PushAsync(new test());
-            };
-            candy.GestureRecognizers.Add(tap3);
-
+            camera.Clicked += camera_Clicked;
         }
 
         protected override void OnAppearing()
@@ -59,5 +37,21 @@ namespace AwesomeMaps
             }*/
             ///mapView.MoveToCurrentPosition();
 		}
-	}
+        async void camera_Clicked(object sender, EventArgs e)
+        {
+            mapView.IsEnabled = false;
+            var cameraPageClass = new CameraPageClass();
+            cameraPageClass.OnPhotoResult += CameraPageClass_OnPhotoResult;
+            await Navigation.PushModalAsync(cameraPageClass);
+        }
+        async void CameraPageClass_OnPhotoResult(AwesomeMaps.PhotoResultEventArgs result)
+        {
+            await Navigation.PopModalAsync();
+            if (!result.Success)
+                return;
+
+            Photo.Source = ImageSource.FromStream(() => new MemoryStream(result.Image));
+        }
+
+    }
 }
