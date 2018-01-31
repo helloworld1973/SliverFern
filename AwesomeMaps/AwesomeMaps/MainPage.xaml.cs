@@ -39,7 +39,9 @@ namespace AwesomeMaps
 		}
         async void camera_Clicked(object sender, EventArgs e)
         {
-            mapView.IsEnabled = false;
+            //mapView.IsEnabled = false;
+            relativeLayout.Children.Remove(mapView);
+
             var cameraPageClass = new CameraPageClass();
             cameraPageClass.OnPhotoResult += CameraPageClass_OnPhotoResult;
             await Navigation.PushModalAsync(cameraPageClass);
