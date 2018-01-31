@@ -20,7 +20,6 @@ namespace AwesomeMaps
         public MainPage()
 		{
 			InitializeComponent();
-            camera.Clicked += camera_Clicked;
         }
 
         protected override void OnAppearing()
@@ -37,10 +36,10 @@ namespace AwesomeMaps
             }*/
             ///mapView.MoveToCurrentPosition();
 		}
-        async void camera_Clicked(object sender, EventArgs e)
+
+        async void TapGestureRecognizer_Tapped_Camera(object sender, EventArgs e)
         {
-            //mapView.IsEnabled = false;
-            relativeLayout.Children.Remove(mapView);
+            relativeLayout.Children.Remove(mapView);//remove google map
 
             var cameraPageClass = new CameraPageClass();
             cameraPageClass.OnPhotoResult += CameraPageClass_OnPhotoResult;
@@ -55,5 +54,21 @@ namespace AwesomeMaps
             Photo.Source = ImageSource.FromStream(() => new MemoryStream(result.Image));
         }
 
+        async void TapGestureRecognizer_Tapped_ImagesLib(object sender, EventArgs e)
+        {
+            relativeLayout.Children.Remove(mapView);//remove google map
+            imagesLib.IsEnabled = false;
+            Stream stream = await DependencyService.Get<IPicturePicker>().GetImageStreamAsync();
+
+            if (stream != null)
+            {
+                Photo.Source = ImageSource.FromStream(() => stream);
+
+            }
+            else
+            {
+                imagesLib.IsEnabled = true;
+            }
+        }
     }
 }
