@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj\Debug\lp\2\jl\formsviewgroup.jar</Jar>
-    <Jar>obj\Debug\lp\10\jl\support-annotations.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\10\jl\support-annotations.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\11\jl\classes.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\12\jl\classes.jar</Jar>
