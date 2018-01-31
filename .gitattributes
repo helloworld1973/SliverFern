@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=C#
+*.xaml linguist-language=C#
+*.cs linguist-language=C#
+*.png linguist-language=C#
