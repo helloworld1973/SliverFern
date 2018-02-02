@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeMaps.IdentifyListViewPage">
+    <ContentPage.Content>
+        <ListView x:Name="SpeciesListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding ImageAddr}"/>
+                            <Label Text="{Binding Name}"/>
+                            <Label Text="{Binding Similarity}"/>
+                            <Label Text="{Binding InvasiveOrNot}"/>
+                            <Label Text="{Binding Solutions}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </ContentPage.Content>
+</ContentPage>
