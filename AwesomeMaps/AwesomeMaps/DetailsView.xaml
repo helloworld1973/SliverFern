@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeMaps.DetailsView"
+             BackgroundColor="White">
+    
+  <ContentView.Content>
+        <StackLayout Orientation="Vertical">
+            <Image Source="{Binding ImageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="100"/>
+            <Label Text="{Binding Name}" FontSize="15" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+            <Label Text="Description:" FontSize="12" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+            <Label Text="{Binding Description}" FontSize="10" TextColor="Gray" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20" WidthRequest="230"/>
+            <Label Text="Hazard:" FontSize="12" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+            <Label Text="{Binding Hazard}" FontSize="10" TextColor="Gray" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20" WidthRequest="230"/>
+            <Label Text="Solution:" FontSize="12" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+            <Label Text="{Binding Solution}" FontSize="10" TextColor="Gray" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20" WidthRequest="230"/>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

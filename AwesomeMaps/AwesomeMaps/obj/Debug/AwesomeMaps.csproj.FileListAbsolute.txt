@@ -67,3 +67,4 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Daddoon.IconTabbedPage.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Daddoon.IconTabbedPage.xml
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.IdentifyListViewPage.xaml.g.cs
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.DetailsView.xaml.g.cs

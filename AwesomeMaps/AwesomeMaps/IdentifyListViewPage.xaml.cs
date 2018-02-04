@@ -12,21 +12,10 @@ namespace AwesomeMaps
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class IdentifyListViewPage : ContentPage
 	{
-		public IdentifyListViewPage ()
+        Species seletedSpecies = new Species();
+        public IdentifyListViewPage ()
 		{
 			InitializeComponent ();
-
-            string InvasiveOrNotReturn(Boolean set)
-            {
-                if (set.Equals(true))
-                {
-                    return "Invasive Species";
-                }
-                else
-                {
-                    return "Non-invasive Species";
-                }
-            }
             SpeciesListView.ItemsSource = new List<Species>
             {
 
@@ -37,7 +26,10 @@ namespace AwesomeMaps
                     InvasiveOrNot=true,
                     Solutions="please remove it!",
                     ImageAddr="login_image.png",
-                    InvasiveOrNotString=InvasiveOrNotReturn(true)
+                    InvasiveOrNotString=InvasiveOrNotReturn(true),
+                    Description="The plant can grow to 3 metres high with up to 50 stems per plant. It flowers from December to February with showy spikes of purple flowers at the end of the stems.",
+                    Hazard="The plant can grow to 3 metres high with up to 50 stems per plant (usually square in cross-section). It flowers from December to February with showy spikes of purple flowers.",
+                    Solution="The plant can grow to 3 metres high with up to 50 stems per plant (usually square in cross-section)."
                 },
                 new Species
                 {
@@ -59,5 +51,30 @@ namespace AwesomeMaps
                 }
             };
         }
-	}
+        string InvasiveOrNotReturn(Boolean set)
+        {
+            if (set.Equals(true))
+            {
+                return "Invasive Species";
+            }
+            else
+            {
+                return "Non-invasive Species";
+            }
+        }
+        void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as Species;
+            seletedSpecies = item;
+            ListViewPageAndDetailsPage.Children.Remove(SpeciesListView);
+            DetailsView detailsView = new DetailsView();
+            detailsView.BindingContext = item;
+            ListViewPageAndDetailsPage.Children.Add(detailsView);
+            
+            //DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
+           
+            //ListView lst = (ListView)sender;
+            //lst.SelectedItem = null;
+        }
+    }
 }

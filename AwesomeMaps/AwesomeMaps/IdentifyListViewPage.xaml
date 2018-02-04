@@ -11,46 +11,42 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
-    
+
+
     <ContentPage.Content>
+        <StackLayout x:Name="ListViewPageAndDetailsPage">
+            <ListView x:Name="SpeciesListView" HasUnevenRows="True" ItemSelected="OnSelection">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
 
-
-        <ListView x:Name="SpeciesListView" HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-
-                        <StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="130">
-                            <BoxView Color="White" HeightRequest="1"/>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding ImageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="120" HeightRequest="120"/>
-
-                                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Name:" Style="{StaticResource LabelTextColorBlack}"/>
-                                        <Label Text="{Binding Name}" Style="{StaticResource LabelTextColorBlack}"/>
+                            <StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="130">
+                                <BoxView Color="White" HeightRequest="1"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding ImageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="120" HeightRequest="120"/>
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Name:" Style="{StaticResource LabelTextColorBlack}"/>
+                                            <Label Text="{Binding Name}" Style="{StaticResource LabelTextColorBlack}"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Similarity:" TextColor="Gray"/>
+                                            <Label Text="{Binding Similarity}" TextColor="Gray"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding InvasiveOrNotString}" TextColor="Red"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Solutions}" TextColor="Gray"/>
+                                        </StackLayout>
                                     </StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Similarity:" TextColor="Gray"/>
-                                        <Label Text="{Binding Similarity}" TextColor="Gray"/>
-                                    </StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding InvasiveOrNotString}" TextColor="Red"/>
-                                    </StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding Solutions}" TextColor="Gray"/>
-                                    </StackLayout>
-
-                                    
-                                    
                                 </StackLayout>
                             </StackLayout>
-                        </StackLayout>
-                        
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
