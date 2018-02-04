@@ -15,39 +15,49 @@ namespace AwesomeMaps
 		public IdentifyListViewPage ()
 		{
 			InitializeComponent ();
+
+            string InvasiveOrNotReturn(Boolean set)
+            {
+                if (set.Equals(true))
+                {
+                    return "Invasive Species";
+                }
+                else
+                {
+                    return "Non-invasive Species";
+                }
+            }
             SpeciesListView.ItemsSource = new List<Species>
             {
+
                 new Species
                 {
                     Name="Must",
                     Similarity=0.43,
                     InvasiveOrNot=true,
                     Solutions="please remove it!",
-                    ImageAddr="login_image.png"
-
+                    ImageAddr="login_image.png",
+                    InvasiveOrNotString=InvasiveOrNotReturn(true)
                 },
                 new Species
                 {
                     Name="Must",
                     Similarity=0.43,
-                    InvasiveOrNot=true,
+                    InvasiveOrNot=false,
                     Solutions="please remove it!",
-                    ImageAddr="login_image.png"
-
+                    ImageAddr="login_image.png",
+                    InvasiveOrNotString=InvasiveOrNotReturn(false)
                 },
                 new Species
                 {
                     Name="Must",
                     Similarity=0.43,
-                    InvasiveOrNot=true,
+                    InvasiveOrNot=false,
                     Solutions="please remove it!",
-                    ImageAddr="login_image.png"
-
+                    ImageAddr="login_image.png",
+                    InvasiveOrNotString=InvasiveOrNotReturn(false)
                 }
-
             };
-
-
         }
 	}
 }

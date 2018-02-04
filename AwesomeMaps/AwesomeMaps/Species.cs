@@ -13,5 +13,8 @@ namespace AwesomeMaps
         public Boolean InvasiveOrNot { get; set; }
         public string Solutions { get; set; }
         public string ImageAddr { get; set; }
+        public string InvasiveOrNotString { get; set; }
+
+      
     }
 }
