@@ -12,7 +12,6 @@ namespace AwesomeMaps
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class IdentifyListViewPage : ContentPage
 	{
-        Species seletedSpecies = new Species();
         public IdentifyListViewPage ()
 		{
 			InitializeComponent ();
@@ -65,7 +64,6 @@ namespace AwesomeMaps
         void OnSelection(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as Species;
-            seletedSpecies = item;
             ListViewPageAndDetailsPage.Children.Remove(SpeciesListView);
             DetailsView detailsView = new DetailsView();
             detailsView.BindingContext = item;

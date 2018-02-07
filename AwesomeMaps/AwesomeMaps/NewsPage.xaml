@@ -1,12 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AwesomeMaps.NewsPage">
+             x:Class="AwesomeMaps.NewsPage"
+             BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="NewsPageAndDetailsPage">
+            <ListView x:Name="NewsListView" HasUnevenRows="True" ItemSelected="OnSelection">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="130">
+                                <BoxView Color="White" HeightRequest="1"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding ImageSmallAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="120" HeightRequest="120"/>
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label Text="{Binding Title}" TextColor="Black" FontSize="15"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Publisher:" TextColor="Gray" FontSize="13"/>
+                                            <Label Text="{Binding Publisher}" TextColor="Gray" FontSize="13"/>
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
