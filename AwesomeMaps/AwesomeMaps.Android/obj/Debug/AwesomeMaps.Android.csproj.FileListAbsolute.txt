@@ -290,6 +290,7 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\o
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\bin\Debug\AwesomeMaps.Android.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\AwesomeMaps.dll
 bin\Debug\AwesomeMaps.dll.mdb
 bin\Debug\Mono.Android.pdb
 bin\Debug\Mono.Android.Export.pdb
