@@ -1,54 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <ManifestDocuments>
-    <ManifestDocument>obj\Debug\lp\11\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\12\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\13\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\14\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\14\jl\manifest\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\15\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\16\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\17\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\17\jl\manifest\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\18\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\19\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\19\jl\manifest\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\21\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\21\jl\manifest\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\22\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\23\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\23\jl\manifest\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\24\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\25\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\26\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\27\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\28\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\29\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\29\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\30\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\31\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\32\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\32\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\33\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\33\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\34\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\34\jl\manifest\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\35\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\35\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\lp\36\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Debug\lp\9\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\36\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\37\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\38\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\38\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\39\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\48\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\48\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\49\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\49\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\50\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\50\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\lp\51\jl\AndroidManifest.xml</ManifestDocument>
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
-    <Jar>obj\Debug\lp\10\jl\support-annotations.jar</Jar>
-    <Jar>obj\Debug\lp\11\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\12\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\13\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\14\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\15\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\16\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\17\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\18\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\19\jl\classes.jar</Jar>
     <Jar>obj\Debug\lp\2\jl\formsviewgroup.jar</Jar>
-    <Jar>obj\Debug\lp\21\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\22\jl\classes.jar</Jar>
     <Jar>obj\Debug\lp\23\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\24\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\24\jl\support-annotations.jar</Jar>
+    <Jar>obj\Debug\lp\25\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\26\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\27\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\28\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\29\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\30\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\31\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\32\jl\classes.jar</Jar>
     <Jar>obj\Debug\lp\33\jl\classes.jar</Jar>
     <Jar>obj\Debug\lp\34\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\35\jl\classes.jar</Jar>
     <Jar>obj\Debug\lp\36\jl\classes.jar</Jar>
-    <Jar>obj\Debug\lp\9\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\37\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\38\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\39\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\48\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\49\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\50\jl\classes.jar</Jar>
+    <Jar>obj\Debug\lp\51\jl\classes.jar</Jar>
   </Jars>
 </Paths>

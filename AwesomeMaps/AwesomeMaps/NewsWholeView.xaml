@@ -6,7 +6,7 @@
              
   <ContentView.Content>
         <StackLayout Orientation="Vertical">
-            <BoxView HeightRequest="5" BackgroundColor="Yellow" />
+            <BoxView HeightRequest="5" BackgroundColor="White"/>
             <Label Text="{Binding Title}" FontSize="15" TextColor="Black" HorizontalOptions="CenterAndExpand"  VerticalOptions="Center"/>
             <Image Source="{Binding ImageBigAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="100"/>
             <StackLayout Orientation="Horizontal">

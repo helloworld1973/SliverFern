@@ -20,7 +20,6 @@
                                             <Label Text="Publisher:" TextColor="Gray" FontSize="13"/>
                                             <Label Text="{Binding Publisher}" TextColor="Gray" FontSize="13"/>
                                         </StackLayout>
-
                                     </StackLayout>
                                 </StackLayout>
                             </StackLayout>

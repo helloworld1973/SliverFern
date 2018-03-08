@@ -20,33 +20,15 @@ namespace AwesomeMaps
 
                 new Species
                 {
-                    Name="Must",
-                    Similarity=0.43,
-                    InvasiveOrNot=true,
-                    Solutions="please remove it!",
-                    ImageAddr="login_image.png",
-                    InvasiveOrNotString=InvasiveOrNotReturn(true),
-                    Description="The plant can grow to 3 metres high with up to 50 stems per plant. It flowers from December to February with showy spikes of purple flowers at the end of the stems.",
-                    Hazard="The plant can grow to 3 metres high with up to 50 stems per plant (usually square in cross-section). It flowers from December to February with showy spikes of purple flowers.",
-                    Solution="The plant can grow to 3 metres high with up to 50 stems per plant (usually square in cross-section)."
+
                 },
                 new Species
                 {
-                    Name="Must",
-                    Similarity=0.43,
-                    InvasiveOrNot=false,
-                    Solutions="please remove it!",
-                    ImageAddr="login_image.png",
-                    InvasiveOrNotString=InvasiveOrNotReturn(false)
+                   
                 },
                 new Species
                 {
-                    Name="Must",
-                    Similarity=0.43,
-                    InvasiveOrNot=false,
-                    Solutions="please remove it!",
-                    ImageAddr="login_image.png",
-                    InvasiveOrNotString=InvasiveOrNotReturn(false)
+                   
                 }
             };
         }

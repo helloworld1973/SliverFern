@@ -18,13 +18,14 @@ namespace AwesomeMaps.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
             base.OnCreate(bundle);
             
             global::Xamarin.Forms.Forms.Init(this, bundle);
             
             Xamarin.FormsGoogleMaps.Init(this, bundle);
-
+            
             LoadApplication(new App());
         }
 
