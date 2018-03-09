@@ -63,17 +63,26 @@ namespace AwesomeMaps
 
         async void TapGestureRecognizer_Tapped_ImagesLib(object sender, EventArgs e)
         {
-            relativeLayout.Children.Remove(mapView);//remove google map
+
             imagesLib.IsEnabled = false;
             Stream stream = await DependencyService.Get<IPicturePicker>().GetImageStreamAsync();
             byte[] m_Bytes = ReadToEnd(stream);
             await MakePredictionRequest(m_Bytes);
+            string[] threeSpecies = new string[6];
+            threeSpecies=getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
+
+
+            relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
+            IdentifyListView identifyListView = new IdentifyListView();
+        
+            relativeLayout.Children.Add(identifyListView,Constraint.RelativeToParent((parent) => {
+                return parent.X;
+            }));
 
 
             if (stream != null)
             {
                 Photo.Source = ImageSource.FromStream(() => stream);
-
             }
             else
             {
@@ -156,6 +165,24 @@ namespace AwesomeMaps
             }
         }
 
+        public string[] getDetailsFromAIreturn(string wholeLineInfo)
+        {
+            //wholeLineInfo = wholeLineInfo.Replace('"',' '); //delete "
+            wholeLineInfo = wholeLineInfo.Replace("{", "");//delete {
+            wholeLineInfo = wholeLineInfo.Replace("}", "");//delete }
+            wholeLineInfo = wholeLineInfo.Replace("[", "");//delete [
+            wholeLineInfo = wholeLineInfo.Replace("]", "");//delete ]
+            wholeLineInfo = wholeLineInfo.Replace(":", "");//delete :
+            wholeLineInfo = wholeLineInfo.Replace(",", "");//delete ,
+
+            string[] namesArray = wholeLineInfo.Split('"');
+            string[] threeSpecies = new string[6];
+            threeSpecies[0] = namesArray[25]; threeSpecies[1] = namesArray[28];
+            threeSpecies[2] = namesArray[35]; threeSpecies[3] = namesArray[38];
+            threeSpecies[4] = namesArray[45]; threeSpecies[5] = namesArray[48];
+
+            return threeSpecies;
+        }
 
     }
 }
