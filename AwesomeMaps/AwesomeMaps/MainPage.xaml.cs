@@ -56,33 +56,90 @@ namespace AwesomeMaps
                 return;
             byte[] m_Bytes = result.Image;
             await MakePredictionRequest(m_Bytes);
+            string[] threeSpecies = new string[6];
+            threeSpecies = getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
 
+            AzureDataService azureDataService = new AzureDataService();
+            List<Species> speciesList = new List<Species>();
 
-            Photo.Source = ImageSource.FromStream(() => new MemoryStream(result.Image));
+            try
+            {
+                string name1 = threeSpecies[0];
+                IEnumerable<Species> iEnumerableSpecies1 = await azureDataService.GetSpeciesAsync(name1);
+                Species species1 = iEnumerableSpecies1.First();
+                species1.similarity = System.Convert.ToDouble(threeSpecies[1]);
+                speciesList.Add(species1);
+
+                string name2 = threeSpecies[2];
+                IEnumerable<Species> iEnumerableSpecies2 = await azureDataService.GetSpeciesAsync(name2);
+                Species species2 = iEnumerableSpecies2.First();
+                species2.similarity = System.Convert.ToDouble(threeSpecies[3]);
+                speciesList.Add(species2);
+
+                string name3 = threeSpecies[4];
+                IEnumerable<Species> iEnumerableSpecies3 = await azureDataService.GetSpeciesAsync(name3);
+                Species species3 = iEnumerableSpecies3.First();
+                species3.similarity = System.Convert.ToDouble(threeSpecies[5]);
+                speciesList.Add(species3);
+
+            }
+            catch (Exception exp)
+            {
+                Debug.WriteLine(@"Sync error: {0}", exp.Message);
+            }
+
+            relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
+
+            relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }));
+
+            // Photo.Source = ImageSource.FromStream(() => new MemoryStream(result.Image));
         }
 
-        async void TapGestureRecognizer_Tapped_ImagesLib(object sender, EventArgs e)
+        public async void TapGestureRecognizer_Tapped_ImagesLib(object sender, EventArgs e)
         {
 
             imagesLib.IsEnabled = false;
             Stream stream = await DependencyService.Get<IPicturePicker>().GetImageStreamAsync();
-            byte[] m_Bytes = ReadToEnd(stream);
-            await MakePredictionRequest(m_Bytes);
-            string[] threeSpecies = new string[6];
-            threeSpecies=getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
-
-
-            relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
-            IdentifyListView identifyListView = new IdentifyListView();
-        
-            relativeLayout.Children.Add(identifyListView,Constraint.RelativeToParent((parent) => {
-                return parent.X;
-            }));
-
-
             if (stream != null)
             {
-                Photo.Source = ImageSource.FromStream(() => stream);
+               // Photo.Source = ImageSource.FromStream(() => stream);
+                byte[] m_Bytes = ReadToEnd(stream);
+                await MakePredictionRequest(m_Bytes);
+                string[] threeSpecies = new string[6];
+                threeSpecies = getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
+
+                AzureDataService azureDataService = new AzureDataService();
+                List<Species> speciesList = new List<Species>();
+
+                try
+                {
+                    string name1 = threeSpecies[0];
+                    IEnumerable<Species> iEnumerableSpecies1 = await azureDataService.GetSpeciesAsync(name1);
+                    Species species1 = iEnumerableSpecies1.First();
+                    species1.similarity = System.Convert.ToDouble(threeSpecies[1]);
+                    speciesList.Add(species1);
+
+                    string name2 = threeSpecies[2];
+                    IEnumerable<Species> iEnumerableSpecies2 = await azureDataService.GetSpeciesAsync(name2);
+                    Species species2 = iEnumerableSpecies2.First();
+                    species2.similarity = System.Convert.ToDouble(threeSpecies[3]);
+                    speciesList.Add(species2);              
+
+                    string name3 = threeSpecies[4];
+                    IEnumerable<Species> iEnumerableSpecies3 = await azureDataService.GetSpeciesAsync(name3);
+                    Species species3 = iEnumerableSpecies3.First();
+                    species3.similarity = System.Convert.ToDouble(threeSpecies[5]);
+                    speciesList.Add(species3);
+
+                }
+                catch (Exception exp)
+                {
+                    Debug.WriteLine(@"Sync error: {0}", exp.Message);
+                }
+
+                relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
+
+                relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }));
             }
             else
             {

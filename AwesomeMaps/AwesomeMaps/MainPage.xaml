@@ -14,14 +14,6 @@
             <RelativeLayout
             x:Name="relativeLayoutSubset"
             >
-            
-                <Image x:Name="Photo"
-                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
-                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
-                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
-                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}"
-                >
-                </Image>
 
                 <local:MapView
 				    x:Name="mapView"
@@ -40,7 +32,7 @@
                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}">
                     <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Camera" />
+                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Camera" />
                     </Image.GestureRecognizers>
                 </Image>
 

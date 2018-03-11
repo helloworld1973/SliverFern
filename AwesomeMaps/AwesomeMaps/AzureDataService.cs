@@ -76,6 +76,18 @@ namespace AwesomeMaps
             return new ObservableCollection<Species>(items);
         }
 
+        public async Task<ObservableCollection<String>> GetSpeciesPictureURL(string name)
+        {
+            await SyncSpecies();
+
+            IEnumerable<String> items = await speciesTable          
+              .Where(todoItem => todoItem.speciesName == name)
+              .Select(todoItem => todoItem.imageAddr)
+              .ToEnumerableAsync();
+
+            return new ObservableCollection<String>(items);
+        }
+
         public async Task<Species> AddSpecies()
         {
             await Initialize();

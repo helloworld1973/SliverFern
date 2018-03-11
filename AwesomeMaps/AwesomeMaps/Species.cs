@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AwesomeMaps
 {
-    class Species
+    public class Species
     {
         [Newtonsoft.Json.JsonProperty("id")]
         public string id { get; set; }
@@ -14,11 +14,13 @@ namespace AwesomeMaps
         [Newtonsoft.Json.JsonProperty("speciesName")]
         public string speciesName { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("similarity")]
+       // [Newtonsoft.Json.JsonProperty("similarity")]
         public double similarity { get; set; }
 
         [Newtonsoft.Json.JsonProperty("invasiveOrNot")]
         public Boolean invasiveOrNot { get; set; }
+
+        public string invasiveOrNotString { get; set; }
 
         [Newtonsoft.Json.JsonProperty("imageAddr")]
         public string imageAddr { get; set; }
