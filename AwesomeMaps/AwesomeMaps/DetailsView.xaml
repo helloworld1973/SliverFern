@@ -6,21 +6,25 @@
     
   <ContentView.Content>
         <ScrollView>
-            <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill">
             <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="100"/>
             
             <Label Text="{Binding speciesName}" FontSize="15" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
 
-                <StackLayout Orientation="Vertical">
-                <Label Text="Also Known As:" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
-                <Label Text="{Binding alsoKnownAs}" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
-
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Also Known As:" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+                    <Label Text="{Binding alsoKnownAs}" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
                 <Label Text="Family:" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
                 <Label Text="{Binding family}" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
-
-                <Label Text="Origin:" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
-                <Label Text="{Binding origin}" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
-            </StackLayout>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Origin:" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+                    <Label Text="{Binding origin}" FontSize="10" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
+                </StackLayout>
 
             <Label Text="Habitats:" FontSize="12" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>
             <Label Text="{Binding habitats}" FontSize="10" TextColor="Gray" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20" WidthRequest="230"/>

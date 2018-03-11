@@ -22,7 +22,7 @@ namespace AwesomeMaps
                 new Species
                 {
                     speciesName=speciesList[0].speciesName,
-                    similarity=speciesList[0].similarity,
+                    similarity=speciesList[0].similarity*100,//转成百分比
                     invasiveOrNot=speciesList[0].invasiveOrNot,
                     invasiveOrNotString=InvasiveOrNotReturn(speciesList[0].invasiveOrNot),
                     imageAddr=speciesList[0].imageAddr,
@@ -39,7 +39,7 @@ namespace AwesomeMaps
                 new Species
                 {
                     speciesName=speciesList[1].speciesName,
-                    similarity=speciesList[1].similarity,
+                    similarity=speciesList[1].similarity*100,//转成百分比,
                     invasiveOrNot=speciesList[1].invasiveOrNot,
                     invasiveOrNotString=InvasiveOrNotReturn(speciesList[1].invasiveOrNot),
                     imageAddr=speciesList[1].imageAddr,
@@ -56,7 +56,7 @@ namespace AwesomeMaps
                 new Species
                 {
                    speciesName=speciesList[2].speciesName,
-                    similarity=speciesList[2].similarity,
+                    similarity=speciesList[2].similarity*100,//转成百分比,
                     invasiveOrNot=speciesList[2].invasiveOrNot,
                     invasiveOrNotString=InvasiveOrNotReturn(speciesList[2].invasiveOrNot),
                     imageAddr=speciesList[2].imageAddr,

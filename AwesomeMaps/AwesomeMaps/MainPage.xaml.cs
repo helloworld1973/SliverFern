@@ -67,19 +67,19 @@ namespace AwesomeMaps
                 string name1 = threeSpecies[0];
                 IEnumerable<Species> iEnumerableSpecies1 = await azureDataService.GetSpeciesAsync(name1);
                 Species species1 = iEnumerableSpecies1.First();
-                species1.similarity = System.Convert.ToDouble(threeSpecies[1]);
+                species1.similarity = System.Convert.ToDouble(threeSpecies[1].Substring(0,6));//keep it to the fourth decimal place
                 speciesList.Add(species1);
 
                 string name2 = threeSpecies[2];
                 IEnumerable<Species> iEnumerableSpecies2 = await azureDataService.GetSpeciesAsync(name2);
                 Species species2 = iEnumerableSpecies2.First();
-                species2.similarity = System.Convert.ToDouble(threeSpecies[3]);
+                species2.similarity = System.Convert.ToDouble(threeSpecies[3].Substring(0, 6));
                 speciesList.Add(species2);
 
                 string name3 = threeSpecies[4];
                 IEnumerable<Species> iEnumerableSpecies3 = await azureDataService.GetSpeciesAsync(name3);
                 Species species3 = iEnumerableSpecies3.First();
-                species3.similarity = System.Convert.ToDouble(threeSpecies[5]);
+                species3.similarity = System.Convert.ToDouble(threeSpecies[5].Substring(0, 6));
                 speciesList.Add(species3);
 
             }
@@ -90,7 +90,10 @@ namespace AwesomeMaps
 
             relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
 
-            relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }));
+            relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }),
+                                                                           Constraint.RelativeToParent((parent) => { return parent.Y; }),
+                                                                           Constraint.RelativeToParent((parent) => { return parent.Width; }),
+                                                                           Constraint.RelativeToParent((parent) => { return parent.Height; }));
 
             // Photo.Source = ImageSource.FromStream(() => new MemoryStream(result.Image));
         }
@@ -116,19 +119,19 @@ namespace AwesomeMaps
                     string name1 = threeSpecies[0];
                     IEnumerable<Species> iEnumerableSpecies1 = await azureDataService.GetSpeciesAsync(name1);
                     Species species1 = iEnumerableSpecies1.First();
-                    species1.similarity = System.Convert.ToDouble(threeSpecies[1]);
+                    species1.similarity = System.Convert.ToDouble(threeSpecies[1].Substring(0, 6));
                     speciesList.Add(species1);
 
                     string name2 = threeSpecies[2];
                     IEnumerable<Species> iEnumerableSpecies2 = await azureDataService.GetSpeciesAsync(name2);
                     Species species2 = iEnumerableSpecies2.First();
-                    species2.similarity = System.Convert.ToDouble(threeSpecies[3]);
+                    species2.similarity = System.Convert.ToDouble(threeSpecies[3].Substring(0, 6));
                     speciesList.Add(species2);              
 
                     string name3 = threeSpecies[4];
                     IEnumerable<Species> iEnumerableSpecies3 = await azureDataService.GetSpeciesAsync(name3);
                     Species species3 = iEnumerableSpecies3.First();
-                    species3.similarity = System.Convert.ToDouble(threeSpecies[5]);
+                    species3.similarity = System.Convert.ToDouble(threeSpecies[5].Substring(0, 6));
                     speciesList.Add(species3);
 
                 }
@@ -139,7 +142,11 @@ namespace AwesomeMaps
 
                 relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
 
-                relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }));
+                relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }),
+                                                                               Constraint.RelativeToParent((parent) => { return parent.Y; }),
+                                                                               Constraint.RelativeToParent((parent) => { return parent.Width; }),
+                                                                               Constraint.RelativeToParent((parent) => { return parent.Height; }));
+
             }
             else
             {
