@@ -46,9 +46,9 @@ namespace AwesomeMaps
         {
             var item = e.SelectedItem as News;
             NewsPageAndDetailsPage.Children.Remove(NewsListView);
-            NewsWholeView newsWholeView = new NewsWholeView();
-            newsWholeView.BindingContext = item;
-            NewsPageAndDetailsPage.Children.Add(newsWholeView);
+            //NewsWholeView newsWholeView = new NewsWholeView();
+            //newsWholeView.BindingContext = item;
+            //NewsPageAndDetailsPage.Children.Add(newsWholeView);
         }
 
     }

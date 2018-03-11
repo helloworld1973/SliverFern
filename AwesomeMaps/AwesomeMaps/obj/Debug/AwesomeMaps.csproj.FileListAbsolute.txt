@@ -67,7 +67,6 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Daddoon.IconTabbedPage.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Xamarin.Forms.Daddoon.IconTabbedPage.xml
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.DetailsView.xaml.g.cs
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.NewsWholeView.xaml.g.cs
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Debug\AwesomeMaps.csproj.App.config
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Microsoft.Azure.Mobile.Client.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Debug\Microsoft.Azure.Mobile.Client.SQLiteStore.dll
