@@ -4,7 +4,7 @@
              x:Class="AwesomeMaps.NewsPage"
              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout x:Name="NewsPageAndDetailsPage">
+        <StackLayout x:Name="NewsPageAndDetailsPage" BackgroundColor="#EBEBEB">
             <ListView x:Name="NewsListView" HasUnevenRows="True" ItemSelected="OnSelection">
                 <ListView.ItemTemplate>
                     <DataTemplate>

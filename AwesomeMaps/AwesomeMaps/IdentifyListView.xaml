@@ -12,14 +12,14 @@
     </ContentPage.Resources>
 
     <ContentView.Content>
-        <StackLayout x:Name="ListViewPageAndDetailsPage" VerticalOptions="Fill" HorizontalOptions="Fill">
+        <StackLayout x:Name="ListViewPageAndDetailsPage" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="#EBEBEB">
             <ListView x:Name="SpeciesListView" HasUnevenRows="True" ItemSelected="OnSelection">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
 
-                            <StackLayout Orientation="Vertical" BackgroundColor="White">
-                                <BoxView Color="White" HeightRequest="1"/>
+                            <StackLayout Orientation="Vertical" BackgroundColor="#EBEBEB">
+                                <BoxView Color="#EBEBEB" HeightRequest="1"/>
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="120" HeightRequest="120"/>
                                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">

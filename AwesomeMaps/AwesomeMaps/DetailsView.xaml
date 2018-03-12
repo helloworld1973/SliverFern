@@ -6,7 +6,7 @@
     
   <ContentView.Content>
         <ScrollView>
-            <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill">
+            <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="#EBEBEB">
             <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="100"/>
             
             <Label Text="{Binding speciesName}" FontSize="15" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="20"/>

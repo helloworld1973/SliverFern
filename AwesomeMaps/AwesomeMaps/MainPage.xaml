@@ -10,6 +10,7 @@
             VerticalOptions="Fill"
             HorizontalOptions="Fill"
             x:Name="relativeLayout"
+            BackgroundColor="#EBEBEB"
             >
             <RelativeLayout
             x:Name="relativeLayoutSubset"
