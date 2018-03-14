@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <RelativeLayout BackgroundColor="#EBEBEB">
             <Image Source="login_image.png" x:Name="newicon"
-                HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" 
+                HorizontalOptions="Center"  VerticalOptions="Center"
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"

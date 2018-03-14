@@ -4,6 +4,7 @@ using Microsoft.WindowsAzure.MobileServices.Sync;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -37,12 +38,11 @@ namespace AwesomeMaps
             //Define table
             store.DefineTable<Species>();
 
-            //Initialize SyncContext
+            //Initialize SyncContext  used to associate the local store with the sync context
             await MobileClient.SyncContext.InitializeAsync(store);
 
             speciesTable = MobileClient.GetSyncTable<Species>();
         }
-
 
         private string InitializeDatabase()
         {
@@ -65,6 +65,8 @@ namespace AwesomeMaps
             return path;
         }
 
+
+
         public async Task<ObservableCollection<Species>> GetSpeciesAsync(string name)
         {
             await SyncSpecies();
@@ -76,17 +78,7 @@ namespace AwesomeMaps
             return new ObservableCollection<Species>(items);
         }
 
-        public async Task<ObservableCollection<String>> GetSpeciesPictureURL(string name)
-        {
-            await SyncSpecies();
 
-            IEnumerable<String> items = await speciesTable          
-              .Where(todoItem => todoItem.speciesName == name)
-              .Select(todoItem => todoItem.imageAddr)
-              .ToEnumerableAsync();
-
-            return new ObservableCollection<String>(items);
-        }
 
         public async Task<Species> AddSpecies()
         {
@@ -103,23 +95,48 @@ namespace AwesomeMaps
         }
 
 
+
         public async Task SyncSpecies()
         {
             await Initialize();
-
+            ReadOnlyCollection<MobileServiceTableOperationError> syncErrors = null;
             try
             {
-
-                await speciesTable.PullAsync($"allMessage", speciesTable.CreateQuery());
                 await MobileClient.SyncContext.PushAsync();
+                await speciesTable.PullAsync($"allMessage", speciesTable.CreateQuery());
+                
             }
-            catch (Exception ex)
+            catch (MobileServicePushFailedException exc)
             {
-                System.Diagnostics.Debug.WriteLine($"Error during Sync occurred: {ex.Message}");
+                if (exc.PushResult != null)
+                {
+                    syncErrors = exc.PushResult.Errors;
+                }
+            }
+
+            // Simple error/conflict handling.
+            if (syncErrors != null)
+            {
+                foreach (var error in syncErrors)
+                {
+                    if (error.OperationKind == MobileServiceTableOperationKind.Update && error.Result != null)
+                    {
+                        // Update failed, revert to server's copy
+                        await error.CancelAndUpdateItemAsync(error.Result);
+                    }
+                    else
+                    {
+                        // Discard local change
+                        await error.CancelAndDiscardItemAsync();
+                    }
+
+                    Debug.WriteLine(@"Error executing sync operation. Item: {0} ({1}). Operation discarded.", error.TableName, error.Item["id"]);
+                }
             }
         }
        
         
+
         //public AzureDataService()
         //{
         //    MobileService = new MobileServiceClient("https://sliverfernmobileapp.azurewebsites.net");
