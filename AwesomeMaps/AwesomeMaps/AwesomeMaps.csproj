@@ -42,6 +42,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AzureDataService.cs" />
+    <Compile Include="AzureDataServiceForPins.cs" />
     <Compile Include="CameraPageClass.cs" />
     <Compile Include="DetailsView.xaml.cs">
       <DependentUpon>DetailsView.xaml</DependentUpon>
@@ -62,6 +63,7 @@
     <Compile Include="NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SPECIES_LA_LONG.cs" />
     <Compile Include="Species.cs" />
     <Compile Include="test.xaml.cs">
       <DependentUpon>test.xaml</DependentUpon>

@@ -24,12 +24,11 @@ namespace AwesomeMaps
 
             var appUrl = "https://sliverfernmobileapp.azurewebsites.net";
 
-
-
             MobileClient = new MobileServiceClient(appUrl);
 
             //InitialzeDatabase for path
             var path = InitializeDatabase();
+
             path = Path.Combine(MobileServiceClient.DefaultDatabasePath, path);
 
             //setup our local sqlite store and intialize our table
@@ -42,6 +41,7 @@ namespace AwesomeMaps
             await MobileClient.SyncContext.InitializeAsync(store);
 
             speciesTable = MobileClient.GetSyncTable<Species>();
+
         }
 
         private string InitializeDatabase()
@@ -65,8 +65,6 @@ namespace AwesomeMaps
             return path;
         }
 
-
-
         public async Task<ObservableCollection<Species>> GetSpeciesAsync(string name)
         {
             await SyncSpecies();
@@ -77,9 +75,7 @@ namespace AwesomeMaps
 
             return new ObservableCollection<Species>(items);
         }
-
-
-
+        /*
         public async Task<Species> AddSpecies()
         {
             await Initialize();
@@ -92,10 +88,7 @@ namespace AwesomeMaps
             await speciesTable.InsertAsync(mySpecies);
             await SyncSpecies();
             return mySpecies;
-        }
-
-
-
+        }*/
         public async Task SyncSpecies()
         {
             await Initialize();
