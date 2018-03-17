@@ -41,7 +41,7 @@ namespace AwesomeMaps
                 {
                     Type = PinType.Place,
                     Label = pinClass.speciesName,
-                    Address = "latitude:"+pinClass.latitude+ ",longtitude:"+ pinClass.longtitude,
+                    Address = pinClass.latitude+ ","+ pinClass.longtitude,
                     Position = new Position(pinClass.latitude, pinClass.longtitude)
                 };
                 mapContent.Pins.Add(pin);

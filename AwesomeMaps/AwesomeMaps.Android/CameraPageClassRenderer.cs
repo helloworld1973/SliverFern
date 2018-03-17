@@ -52,8 +52,8 @@ namespace AwesomeMaps.Droid
             RelativeLayout.LayoutParams captureButtonParams = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WrapContent,
                 RelativeLayout.LayoutParams.WrapContent);
-            captureButtonParams.Height = 120;
-            captureButtonParams.Width = 120;
+            captureButtonParams.Height = 240;
+            captureButtonParams.Width = 240;
             capturePhotoButton.LayoutParameters = captureButtonParams;
             mainLayout.AddView(capturePhotoButton);
 

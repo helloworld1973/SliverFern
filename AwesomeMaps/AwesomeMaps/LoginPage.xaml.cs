@@ -25,5 +25,11 @@ namespace AwesomeMaps
             string passWord = password.Text;
             loginbutton.Text = userName + passWord;
         }
+
+        private async void skipButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MainIconTabbedPage());
+        }
+        
     }
 }

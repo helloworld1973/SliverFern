@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <RelativeLayout BackgroundColor="#EBEBEB">
             <Image Source="login_image.png" x:Name="newicon"
-                HorizontalOptions="Center"  VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand"
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
@@ -26,6 +26,7 @@
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1.2,Constant=0}"
                />
+
             <Image Source="ic_password.png" HeightRequest="40" WidthRequest="40" 
                 HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
@@ -33,7 +34,6 @@
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.6,Constant=0}"
                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1.3,Constant=0}"
                 />
-            
             <Entry Text="password"  x:Name="password" FontSize="16" TextColor="White"
                 HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
@@ -41,6 +41,15 @@
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1.3,Constant=0}"
                 />
+
+            <Button Text="SKIP" x:Name="skipbutton" Clicked="skipButton_Clicked" FontSize="17" BackgroundColor="Transparent" TextColor="White"
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1.65,Constant=0}"
+                />
+
             <Button Text="Login" x:Name="loginbutton" Clicked="Button_Clicked" FontSize="19" BackgroundColor="Transparent" TextColor="White"
                 HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
