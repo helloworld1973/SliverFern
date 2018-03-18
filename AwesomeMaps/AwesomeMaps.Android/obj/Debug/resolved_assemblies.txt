@@ -17,6 +17,8 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\o
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Plugin.CurrentActivity.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Plugin.Geolocator.Abstractions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Plugin.Geolocator.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Plugin.Media.Abstractions.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Plugin.Media.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\Plugin.Permissions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\SQLitePCLRaw.batteries_green.dll
@@ -69,12 +71,12 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\o
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Collections.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.IO.dll
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Threading.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Linq.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Reflection.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.ComponentModel.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Threading.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll

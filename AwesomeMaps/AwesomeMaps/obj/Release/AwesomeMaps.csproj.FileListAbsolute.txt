@@ -58,3 +58,9 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Relea
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.IdentifyListView.xaml.g.cs
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.xml
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.xml

@@ -12,6 +12,8 @@ PInvoke.Windows.Core
 Plugin.CurrentActivity
 Plugin.Geolocator.Abstractions
 Plugin.Geolocator
+Plugin.Media.Abstractions
+Plugin.Media
 Plugin.Permissions.Abstractions
 Plugin.Permissions
 SQLitePCLRaw.batteries_green

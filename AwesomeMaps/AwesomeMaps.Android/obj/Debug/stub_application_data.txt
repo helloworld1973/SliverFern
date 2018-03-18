@@ -1,2 +1,2 @@
 android.app.Application
-com.awesome.google.map
+com.southerly.silverfern

@@ -17,6 +17,8 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\o
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Plugin.CurrentActivity.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Plugin.Geolocator.Abstractions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Plugin.Geolocator.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Plugin.Media.Abstractions.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Plugin.Media.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Plugin.Permissions.Abstractions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Plugin.Permissions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\SQLitePCLRaw.batteries_green.dll

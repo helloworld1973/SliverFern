@@ -1,4 +1,6 @@
 ﻿using AwesomeMaps.CustomGoogleMap;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using Plugin.Permissions.Abstractions;
 using System;
 using System.Collections.Generic;
@@ -18,7 +20,7 @@ namespace AwesomeMaps
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
-        String AIreturnData = null;
+
 
         public MainPage()
 		{
@@ -42,119 +44,120 @@ namespace AwesomeMaps
 
         async void TapGestureRecognizer_Tapped_Camera(object sender, EventArgs e)
         {
-            relativeLayout.Children.Remove(mapView);//remove google map
-
-            var cameraPageClass = new CameraPageClass();
-            cameraPageClass.OnPhotoResult += CameraPageClass_OnPhotoResult;
-            await Navigation.PushModalAsync(cameraPageClass);
-        }
-
-        async void CameraPageClass_OnPhotoResult(AwesomeMaps.PhotoResultEventArgs result)
-        {
-            await Navigation.PopModalAsync();
-            if (!result.Success)
+            if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            {
+                DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
                 return;
-            byte[] m_Bytes = result.Image;
-            await MakePredictionRequest(m_Bytes);
-            string[] threeSpecies = new string[6];
-            threeSpecies = getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
-
-            AzureDataService azureDataService = new AzureDataService();
-            List<Species> speciesList = new List<Species>();
+            }
 
             try
             {
-                string name1 = threeSpecies[0];
-                IEnumerable<Species> iEnumerableSpecies1 = await azureDataService.GetSpeciesAsync(name1);
-                Species species1 = iEnumerableSpecies1.First();
-                species1.similarity = System.Convert.ToDouble(threeSpecies[1].Substring(0,6));//keep it to the fourth decimal place
-                speciesList.Add(species1);
+                var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                {
+                    Directory = "Test",
+                    SaveToAlbum = true,
+                    CompressionQuality = 75,
+                    CustomPhotoSize = 50,
+                    PhotoSize = PhotoSize.MaxWidthHeight,
+                    MaxWidthHeight = 2000,
+                    DefaultCamera = CameraDevice.Front
+                });
 
-                string name2 = threeSpecies[2];
-                IEnumerable<Species> iEnumerableSpecies2 = await azureDataService.GetSpeciesAsync(name2);
-                Species species2 = iEnumerableSpecies2.First();
-                species2.similarity = System.Convert.ToDouble(threeSpecies[3].Substring(0, 6));
-                speciesList.Add(species2);
+                if (file == null)
+                    return;
 
-                string name3 = threeSpecies[4];
-                IEnumerable<Species> iEnumerableSpecies3 = await azureDataService.GetSpeciesAsync(name3);
-                Species species3 = iEnumerableSpecies3.First();
-                species3.similarity = System.Convert.ToDouble(threeSpecies[5].Substring(0, 6));
-                speciesList.Add(species3);
+                DisplayAlert("File Location", file.Path, "OK");
+
+                Stream stream = file.GetStream();
+                file.Dispose();
+                CommonOperationCameraLibPictures(stream);
 
             }
             catch (Exception exp)
             {
                 Debug.WriteLine(@"Sync error: {0}", exp.Message);
             }
-
-            relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
-
-            relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }),
-                                                                           Constraint.RelativeToParent((parent) => { return parent.Y; }),
-                                                                           Constraint.RelativeToParent((parent) => { return parent.Width; }),
-                                                                           Constraint.RelativeToParent((parent) => { return parent.Height; }));
-
-            // Photo.Source = ImageSource.FromStream(() => new MemoryStream(result.Image));
         }
 
         public async void TapGestureRecognizer_Tapped_ImagesLib(object sender, EventArgs e)
         {
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+                DisplayAlert("Photos Not Supported", ":( Permission not granted to photos.", "OK");
+                return;
+            }
+            var file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
+            {
+                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium,
+            });
 
-            imagesLib.IsEnabled = false;
-            Stream stream = await DependencyService.Get<IPicturePicker>().GetImageStreamAsync();
+            if (file == null)
+                return;
+
+            Stream stream = file.GetStream();
+            file.Dispose();
+            CommonOperationCameraLibPictures(stream);
+        }
+
+
+        private async void CommonOperationCameraLibPictures(Stream stream)
+        {
             if (stream != null)
             {
-               // Photo.Source = ImageSource.FromStream(() => stream);
+                // Photo.Source = ImageSource.FromStream(() => stream);
                 byte[] m_Bytes = ReadToEnd(stream);
-                await MakePredictionRequest(m_Bytes);
-                string[] threeSpecies = new string[6];
-                threeSpecies = getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
-
-                AzureDataService azureDataService = new AzureDataService();
-                List<Species> speciesList = new List<Species>();
-
-                try
+                string AIreturnData = await MakePredictionRequest(m_Bytes);
+                if (AIreturnData != null)
                 {
-                    string name1 = threeSpecies[0];
-                    IEnumerable<Species> iEnumerableSpecies1 = await azureDataService.GetSpeciesAsync(name1);
-                    Species species1 = iEnumerableSpecies1.First();
-                    species1.similarity = System.Convert.ToDouble(threeSpecies[1].Substring(0, 6));
-                    speciesList.Add(species1);
+                    string[] threeSpecies = new string[6];
+                    threeSpecies = getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
 
-                    string name2 = threeSpecies[2];
-                    IEnumerable<Species> iEnumerableSpecies2 = await azureDataService.GetSpeciesAsync(name2);
-                    Species species2 = iEnumerableSpecies2.First();
-                    species2.similarity = System.Convert.ToDouble(threeSpecies[3].Substring(0, 6));
-                    speciesList.Add(species2);              
+                    AzureDataService azureDataService = new AzureDataService();
+                    List<Species> speciesList = new List<Species>();
 
-                    string name3 = threeSpecies[4];
-                    IEnumerable<Species> iEnumerableSpecies3 = await azureDataService.GetSpeciesAsync(name3);
-                    Species species3 = iEnumerableSpecies3.First();
-                    species3.similarity = System.Convert.ToDouble(threeSpecies[5].Substring(0, 6));
-                    speciesList.Add(species3);
+                    try
+                    {
+                        string name1 = threeSpecies[0];
+                        IEnumerable<Species> iEnumerableSpecies1 = await azureDataService.GetSpeciesAsync(name1);
+                        Species species1 = iEnumerableSpecies1.First();
+                        species1.similarity = System.Convert.ToDouble(threeSpecies[1].Substring(0, 6));//keep it to the fourth decimal place
+                        speciesList.Add(species1);
 
+                        string name2 = threeSpecies[2];
+                        IEnumerable<Species> iEnumerableSpecies2 = await azureDataService.GetSpeciesAsync(name2);
+                        Species species2 = iEnumerableSpecies2.First();
+                        species2.similarity = System.Convert.ToDouble(threeSpecies[3].Substring(0, 6));
+                        speciesList.Add(species2);
+
+                        string name3 = threeSpecies[4];
+                        IEnumerable<Species> iEnumerableSpecies3 = await azureDataService.GetSpeciesAsync(name3);
+                        Species species3 = iEnumerableSpecies3.First();
+                        species3.similarity = System.Convert.ToDouble(threeSpecies[5].Substring(0, 6));
+                        speciesList.Add(species3);
+
+                    }
+                    catch (Exception exp)
+                    {
+                        Debug.WriteLine(@"Sync error: {0}", exp.Message);
+                    }
+
+                    //relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
+
+                    relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }),
+                                                                   Constraint.RelativeToParent((parent) => { return parent.Height; }));
                 }
-                catch (Exception exp)
+                else
                 {
-                    Debug.WriteLine(@"Sync error: {0}", exp.Message);
+                    DisplayAlert("AI Return Results is ", "NULL", "!!!");
                 }
-
-                relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
-
-                relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }),
-                                                                               Constraint.RelativeToParent((parent) => { return parent.Y; }),
-                                                                               Constraint.RelativeToParent((parent) => { return parent.Width; }),
-                                                                               Constraint.RelativeToParent((parent) => { return parent.Height; }));
-
             }
             else
             {
-                imagesLib.IsEnabled = true;
+                DisplayAlert("Photos Stream is ", "NULL", "!!!");
             }
         }
 
-        public static byte[] ReadToEnd(System.IO.Stream stream)
+            private static byte[] ReadToEnd(System.IO.Stream stream)
         {
             long originalPosition = 0;
 
@@ -206,7 +209,8 @@ namespace AwesomeMaps
             }
         }
 
-        public async Task MakePredictionRequest(byte[] byteImageData)
+        //send a photo to vision AI 
+        private async Task<string> MakePredictionRequest(byte[] byteImageData)
         {
             var client = new HttpClient();
 
@@ -214,22 +218,25 @@ namespace AwesomeMaps
             client.DefaultRequestHeaders.Add("Prediction-Key", "2fda6965363343bbb00babc6959ba975");
 
             // Prediction URL - replace this example URL with your valid prediction URL.
-            string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.1/Prediction/7b1f5083-43a1-4a08-9d54-7a153b7ce405/image?iterationId=372a91da-92e5-477a-a1dd-a68e863308c4";
+            //this URL will change,if AI iteration change
+            string url = Variables.CustomVisionURL;
 
             HttpResponseMessage response;
 
             // Request body. Try this sample with a locally stored image.
             byte[] byteData = byteImageData;
 
+            string AIreturnData = null;
             using (var content = new ByteArrayContent(byteData))
             {
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
                 response = await client.PostAsync(url, content);
                 AIreturnData = await response.Content.ReadAsStringAsync();
             }
+            return AIreturnData;
         }
 
-        public string[] getDetailsFromAIreturn(string wholeLineInfo)
+        private string[] getDetailsFromAIreturn(string wholeLineInfo)
         {
             //wholeLineInfo = wholeLineInfo.Replace('"',' '); //delete "
             wholeLineInfo = wholeLineInfo.Replace("{", "");//delete {

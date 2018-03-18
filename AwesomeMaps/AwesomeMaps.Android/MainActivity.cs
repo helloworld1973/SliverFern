@@ -10,10 +10,11 @@ using Xamarin.Forms.Platform.Android.AppCompat;
 using System.IO;
 using System.Threading.Tasks;
 using Android.Content;
+using Plugin.Permissions;
 
 namespace AwesomeMaps.Droid
 {
-    [Activity(Theme = "@style/MainTheme")]
+    [Activity(Theme = "@style/MainTheme", ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -29,30 +30,11 @@ namespace AwesomeMaps.Droid
             LoadApplication(new App());
         }
 
-        //pick an image from picture library
-        public static readonly int PickImageId = 1000;
-        public TaskCompletionSource<Stream> PickImageTaskCompletionSource { set; get; }
-
-        protected override void OnActivityResult(int requestCode, Result resultCode, Intent intent)
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
-            base.OnActivityResult(requestCode, resultCode, intent);
-
-            if (requestCode == PickImageId)
-            {
-                if ((resultCode == Result.Ok) && (intent != null))
-                {
-                    Android.Net.Uri uri = intent.Data;
-                    Stream stream = ContentResolver.OpenInputStream(uri);
-
-                    // Set the Stream as the completion of the Task
-                    PickImageTaskCompletionSource.SetResult(stream);
-                }
-                else
-                {
-                    PickImageTaskCompletionSource.SetResult(null);
-                }
-            }
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
     }
 }
 

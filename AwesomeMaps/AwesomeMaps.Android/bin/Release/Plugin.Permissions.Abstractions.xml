@@ -159,5 +159,26 @@
             UWP: None
             </summary>
         </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.LocationAlways">
+            <summary>
+            Android: Fine and Coarse Location
+            iOS: CoreLocation - Always
+            UWP: Geolocator
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.LocationWhenInUse">
+            <summary>
+            Android: Fine and Coarse Location
+            iOS: CoreLocation - WhenInUse
+            UWP: Geolocator
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.MediaLibrary">
+            <summary>
+            Android: None
+            iOS: MPMediaLibrary
+            UWP: None
+            </summary>
+        </member>
     </members>
 </doc>
