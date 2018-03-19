@@ -8,6 +8,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
   <uses-feature android:name="android.hardware.location.gps" />
   <uses-feature android:name="android.hardware.location.network" />
   <uses-feature android:name="android.hardware.camera" android:required="false" />
@@ -31,8 +32,8 @@
     <activity android:configChanges="orientation|screenSize" android:name="md55b01af31820394fbfb172542d1258596.MediaPickerActivity" />
     <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.southerly.silverfern.mono.MonoRuntimeProvider.__mono_init__" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
     <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
   </application>
-  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
 </manifest>

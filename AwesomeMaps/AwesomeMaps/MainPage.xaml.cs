@@ -44,6 +44,8 @@ namespace AwesomeMaps
 
         async void TapGestureRecognizer_Tapped_Camera(object sender, EventArgs e)
         {
+            await CrossMedia.Current.Initialize();
+
             if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
             {
                 DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
@@ -52,15 +54,16 @@ namespace AwesomeMaps
 
             try
             {
-                var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                 {
                     Directory = "Test",
                     SaveToAlbum = true,
-                    CompressionQuality = 75,
-                    CustomPhotoSize = 50,
-                    PhotoSize = PhotoSize.MaxWidthHeight,
-                    MaxWidthHeight = 2000,
-                    DefaultCamera = CameraDevice.Front
+                    CompressionQuality = 75,//compression ratio
+
+                    PhotoSize = PhotoSize.Custom,
+                    CustomPhotoSize = 50,//50% resize
+                    
+                    DefaultCamera = CameraDevice.Front//use system default camera
                 });
 
                 if (file == null)

@@ -4,68 +4,6 @@
         <name>Validation</name>
     </assembly>
     <members>
-        <member name="T:Validation.Strings">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.Argument_EmptyArray">
-            <summary>
-              Looks up a localized string similar to &apos;{0}&apos; must contain at least one element..
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.Argument_EmptyString">
-            <summary>
-              Looks up a localized string similar to &apos;{0}&apos; cannot be an empty string (&quot;&quot;) or start with the null character..
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.Argument_NullElement">
-            <summary>
-              Looks up a localized string similar to &apos;{0}&apos; cannot contain a null (Nothing in Visual Basic) element..
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.Argument_Whitespace">
-            <summary>
-              Looks up a localized string similar to The parameter &quot;{0}&quot; cannot consist entirely of white space characters..
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.InternalExceptionMessage">
-            <summary>
-              Looks up a localized string similar to An internal error occurred. Please contact customer support..
-            </summary>
-        </member>
-        <member name="P:Validation.Strings.ServiceMissing">
-            <summary>
-              Looks up a localized string similar to Cannot find an instance of the {0} service..
-            </summary>
-        </member>
-        <member name="T:Validation.TypeExtensions">
-            <summary>
-            Extension methods for the <see cref="T:System.Type"/> class to emulate newer reflection APIs.
-            </summary>
-        </member>
-        <member name="M:Validation.TypeExtensions.GetTypeInfo(System.Type)">
-            <summary>
-            Returns the specified type.
-            </summary>
-            <param name="type">The type to return.</param>
-            <returns>The type specified.</returns>
-            <remarks>
-            This silly method allows the same code to compile against the newer
-            as well as older Reflection APIs.
-            </remarks>
-        </member>
         <member name="T:Validation.Assumes">
             <summary>
             Common runtime checks that throw public error exceptions upon failure.
@@ -414,6 +352,15 @@
             </summary>
             <returns>Nothing.  This method always throws.</returns>
         </member>
+        <member name="M:Validation.Requires.Defined``1(``0,System.String)">
+            <summary>
+            Throws an <see cref="T:System.ArgumentException"/> if the specified value
+            is not defined by the enum type.
+            </summary>
+            <typeparam name="T">The type of enum the <paramref name="value"/> is constrained to be defined within.</typeparam>
+            <param name="value">The value that must be defined in <typeparamref name="T"/>.</param>
+            <param name="parameterName">The name of the parameter that supplied the <paramref name="value"/>.</param>
+        </member>
         <member name="M:Validation.Requires.Argument(System.Boolean,System.String,System.String)">
             <summary>
             Throws an ArgumentException if a condition does not evaluate to true.
@@ -473,6 +420,73 @@
             Helper method that formats string arguments.
             </summary>
             <returns>The formatted string.</returns>
+        </member>
+        <member name="T:Validation.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.Argument_EmptyArray">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; must contain at least one element..
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.Argument_EmptyString">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; cannot be an empty string (&quot;&quot;) or start with the null character..
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.Argument_EnumNotDefined">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; must be set to a value defined by the enum &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.Argument_NullElement">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; cannot contain a null (Nothing in Visual Basic) element..
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.Argument_Whitespace">
+            <summary>
+              Looks up a localized string similar to The parameter &quot;{0}&quot; cannot consist entirely of white space characters..
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.InternalExceptionMessage">
+            <summary>
+              Looks up a localized string similar to An internal error occurred. Please contact customer support..
+            </summary>
+        </member>
+        <member name="P:Validation.Strings.ServiceMissing">
+            <summary>
+              Looks up a localized string similar to Cannot find an instance of the {0} service..
+            </summary>
+        </member>
+        <member name="T:Validation.TypeInfoExtensions">
+            <summary>
+            Extension methods for the <see cref="T:System.Type"/> class to emulate older reflection APIs.
+            </summary>
+        </member>
+        <member name="M:Validation.TypeInfoExtensions.GetGenericArguments(System.Reflection.TypeInfo)">
+            <summary>
+            Returns the generic type arguments of specified type.
+            </summary>
+            <param name="type">The type whose generic type arguments should be returned.</param>
+            <returns>An array of types.</returns>
+            <remarks>
+            This silly method allows the same code to compile against the newer
+            as well as older Reflection APIs.
+            </remarks>
         </member>
         <member name="T:Validation.ValidatedNotNullAttribute">
             <summary>

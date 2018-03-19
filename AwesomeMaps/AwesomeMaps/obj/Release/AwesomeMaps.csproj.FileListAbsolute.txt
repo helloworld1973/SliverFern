@@ -9,6 +9,8 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Relea
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\PCLCrypto.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Geolocator.Abstractions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Geolocator.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.dll
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Permissions.Abstractions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Permissions.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\SQLitePCLRaw.batteries_green.dll
@@ -30,6 +32,10 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Relea
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Geolocator.pdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Geolocator.xml
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Geolocator.Abstractions.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.xml
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.pdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.xml
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Permissions.pdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Permissions.xml
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Permissions.Abstractions.pdb
@@ -41,11 +47,9 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Relea
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Xamarin.Forms.Core.pdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Xamarin.Forms.Core.xml
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Xamarin.Forms.Daddoon.IconTabbedPage.xml
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Xamarin.Forms.Platform.pdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Xamarin.Forms.Xaml.pdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Xamarin.Forms.Xaml.xml
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.csproj.App.config
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.csprojResolveAssemblyReference.cache
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.csproj.CoreCompileInputs.cache
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.MainPage.xaml.g.cs
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.App.xaml.g.cs
@@ -58,9 +62,3 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Relea
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.IdentifyListView.xaml.g.cs
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.dll
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.pdb
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.dll
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.dll
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.pdb
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.xml
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.pdb
-D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\bin\Release\Plugin.Media.Abstractions.xml

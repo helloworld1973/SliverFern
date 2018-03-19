@@ -12,6 +12,8 @@ PInvoke.Windows.Core
 Plugin.CurrentActivity
 Plugin.Geolocator.Abstractions
 Plugin.Geolocator
+Plugin.Media.Abstractions
+Plugin.Media
 Plugin.Permissions.Abstractions
 Plugin.Permissions
 SQLitePCLRaw.batteries_green
@@ -50,5 +52,3 @@ Xamarin.GooglePlayServices.Base
 Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Maps
 Xamarin.GooglePlayServices.Tasks
-Plugin.Media.Abstractions
-Plugin.Media

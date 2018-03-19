@@ -14,6 +14,7 @@
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\34\jl\bin\classes.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\35\jl\bin\classes.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\36\jl\bin\classes.jar</Jar>
+    <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\37\jl\bin\classes.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\38\jl\bin\classes.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\39\jl\bin\classes.jar</Jar>
     <Jar>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\40\jl\bin\classes.jar</Jar>
@@ -37,12 +38,11 @@
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\34\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\35\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\36\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\37\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\38\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\40\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\43\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\45\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\47\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\48\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\50\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\51\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\52\jl\res</ResolvedResourceDirectory>
@@ -60,8 +60,6 @@
     <ResolvedAssetDirectory>obj\Debug\lp\35\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\lp\43\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\lp\45\jl\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\lp\47\jl\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\lp\48\jl\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -78,12 +76,11 @@
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\34.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\35.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\36.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\37.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\38.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\40.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\43.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\45.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\47.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\48.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\50.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\51.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Debug\lp\52.stamp</ResolvedResourceDirectoryStamp>
