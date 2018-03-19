@@ -20,7 +20,7 @@ namespace AwesomeMaps
             Children.Add(new MainPage { Icon= "ic_photo_camera.png" });
             Children.Add(new ActivityPage { Icon = "ic_group.png" });
             Children.Add(new NewsPage { Icon = "ic_news.png" });//NewsPage  //IdentifyListViewPage
-            Children.Add(new LoginPage { Icon = "ic_face.png" });
+            Children.Add(new IndividualHistory { Icon = "ic_face.png" });
                         
         }
     }
