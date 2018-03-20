@@ -21,6 +21,7 @@ namespace AwesomeMaps
     public partial class MainPage : ContentPage
     {
 
+        Boolean loadingIndicator = false;
 
         public MainPage()
 		{
@@ -105,13 +106,18 @@ namespace AwesomeMaps
 
         private async void CommonOperationCameraLibPictures(Stream stream)
         {
+            
             if (stream != null)
             {
+                loadingIndicator = true;
                 // Photo.Source = ImageSource.FromStream(() => stream);
                 byte[] m_Bytes = ReadToEnd(stream);
                 string AIreturnData = await MakePredictionRequest(m_Bytes);
+                loadingIndicator = false;// first step, contact to AI
+
                 if (AIreturnData != null)
                 {
+                    loadingIndicator = true;
                     string[] threeSpecies = new string[6];
                     threeSpecies = getDetailsFromAIreturn(AIreturnData);//get the top 3 possible results
 
@@ -141,10 +147,11 @@ namespace AwesomeMaps
                     }
                     catch (Exception exp)
                     {
+                        loadingIndicator =false;
                         Debug.WriteLine(@"Sync error: {0}", exp.Message);
                     }
-
-                    //relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
+                    loadingIndicator = false;
+                    relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
 
                     relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }),
                                                                    Constraint.RelativeToParent((parent) => { return parent.Height; }));

@@ -5,14 +5,14 @@
              BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill">
+            <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
 
                 <Image Source="new1.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew1" />
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="new2.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                <Image Source="new2.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0" >
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew2" />
                     </Image.GestureRecognizers>

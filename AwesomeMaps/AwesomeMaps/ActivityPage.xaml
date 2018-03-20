@@ -6,72 +6,84 @@
         <ScrollView>
             <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill">
 
-                <Image Source="c1top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC1top" />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="c1bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC1bot" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
+                    <Image Source="c1top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC1top" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="c1bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC1bot" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
 
-                <Image Source="c2top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC2top" />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="c2bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC2bot" />
-                    </Image.GestureRecognizers>
-                </Image>
 
-                <Image Source="c3top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC3top" />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="c3bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC3bot" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
+                    <Image Source="c2top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC2top" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="c2bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC2bot" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
 
-                <Image Source="c4top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC4top" />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="c4bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC4bot" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
+                    <Image Source="c3top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC3top" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="c3bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC3bot" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
 
-                <Image Source="c5top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC5top" />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="c5bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC5bot" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
+                    <Image Source="c4top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC4top" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="c4bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC4bot" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
 
-                <Image Source="c6top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC6top" />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image Source="c6bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC6bot" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
+                    <Image Source="c5top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC5top" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="c5bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC5bot" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
 
+                <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
+                    <Image Source="c6top.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC6top" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="c6bot.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedC6bot" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -8,7 +8,7 @@ using Xamarin.Forms.Daddoon;
 
 namespace AwesomeMaps
 {
-    class MainIconTabbedPage:IconTabbedPage
+    class MainIconTabbedPage: IconTabbedPage //class MainIconTabbedPage:IconTabbedPage
     {
         public MainIconTabbedPage() : base()
         {

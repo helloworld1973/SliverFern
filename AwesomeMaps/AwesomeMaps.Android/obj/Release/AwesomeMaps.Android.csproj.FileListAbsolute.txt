@@ -277,6 +277,11 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\o
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\res\drawable-hdpi\moment.png
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\res\drawable-mdpi\moment.png
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\res\drawable-xhdpi\moment.png
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\res\drawable-xxhdpi\moment.png
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\obj\Release\res\drawable-xxxhdpi\moment.png
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps.Android\bin\Release\AwesomeMaps.Android.dll
 bin\Release\AwesomeMaps.dll.mdb
 bin\Release\Mono.Android.pdb

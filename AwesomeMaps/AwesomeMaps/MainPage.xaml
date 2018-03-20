@@ -12,6 +12,13 @@
             x:Name="relativeLayout"
             BackgroundColor="#EBEBEB"
             >
+            <ActivityIndicator Color="WhiteSmoke"  IsRunning="{Binding loadingIndicator}" HorizontalOptions="Center" VerticalOptions="Center"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}"                                   
+                />
+
             <RelativeLayout
             x:Name="relativeLayoutSubset"
             >
@@ -25,6 +32,7 @@
                     >
                 </local:MapView>
 
+               
 
                 <Image Source="ic_camera_black.jpg" x:Name="camera"  HeightRequest="65" WidthRequest="65"
                     HorizontalOptions="Center" VerticalOptions="End" Scale="1.3"  
