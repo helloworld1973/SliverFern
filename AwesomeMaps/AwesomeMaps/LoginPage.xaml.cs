@@ -28,7 +28,9 @@ namespace AwesomeMaps
 
         private async void skipButton_Clicked(object sender, EventArgs e)
         {
+            activityIndicator.IsRunning = true;
             await Navigation.PushModalAsync(new MainIconTabbedPage());
+            activityIndicator.IsRunning = false;
         }
         
     }
