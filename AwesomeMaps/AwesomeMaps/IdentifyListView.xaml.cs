@@ -13,9 +13,10 @@ namespace AwesomeMaps
 	public partial class IdentifyListView : ContentView
 	{
         public IdentifyListView()
-        { InitializeComponent(); }
-
-         public IdentifyListView(List<Species> speciesList)
+        {
+            InitializeComponent();
+        }
+        public IdentifyListView(List<Species> speciesList)
         {
             InitializeComponent();
             SpeciesListView.ItemsSource = new List<Species>
@@ -88,10 +89,10 @@ namespace AwesomeMaps
         void OnSelection(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as Species;
-            ListViewPageAndDetailsPage.Children.Remove(SpeciesListView);
             DetailsView detailsView = new DetailsView();
             detailsView.BindingContext = item;
-            ListViewPageAndDetailsPage.Children.Add(detailsView);
+            ListViewPageAndDetailsPage.Children.Insert(0,detailsView);
         }
+
     }
 }

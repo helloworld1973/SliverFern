@@ -151,10 +151,10 @@ namespace AwesomeMaps
                         Debug.WriteLine(@"Sync error: {0}", exp.Message);
                     }
                     loadingIndicator = false;
-                    relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
-
-                    relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }),
-                                                                   Constraint.RelativeToParent((parent) => { return parent.Height; }));
+                    //relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
+                    //relativeLayout.Children.Add(new IdentifyListView(speciesList));
+                    //relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }), Constraint.RelativeToParent((parent) => { return parent.Height; }));
+                    relativeLayout.Children.Insert(1,new IdentifyListView(speciesList));
                 }
                 else
                 {

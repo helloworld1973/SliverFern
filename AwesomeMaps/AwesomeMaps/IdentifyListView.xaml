@@ -1,15 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AwesomeMaps.IdentifyListView">
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style x:Key="LabelTextColorBlack" TargetType="Label">
-                <Setter Property="TextColor" Value="Black"/>
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
+             x:Class="AwesomeMaps.IdentifyListView"
+             BackgroundColor="#EBEBEB">
 
     <ContentView.Content>
         <StackLayout x:Name="ListViewPageAndDetailsPage" VerticalOptions="Fill" HorizontalOptions="Fill">
@@ -18,20 +11,19 @@
                     <DataTemplate>
                         <ViewCell>
 
-                            <StackLayout Orientation="Vertical" BackgroundColor="White">
-                                <BoxView Color="White" HeightRequest="1"/>
+                            <StackLayout Orientation="Vertical" >
+                                <BoxView Color="#EBEBEB" HeightRequest="1"/>
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="120" HeightRequest="120"/>
                                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
 
                                         <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding speciesName}" Style="{StaticResource LabelTextColorBlack}"/>
+                                            <Label Text="{Binding speciesName}" TextColor="Black"/>
                                         </StackLayout>
-
                                         <StackLayout Orientation="Horizontal">
-                                            <Label Text="Similarity:" TextColor="Gray"/>
-                                            <Label Text="{Binding similarity}" TextColor="Gray"/>
-                                            <Label Text="%" TextColor="Gray"/>
+                                            <Label Text="Similarity:" TextColor="Black"/>
+                                            <Label Text="{Binding similarity}" TextColor="Black"/>
+                                            <Label Text="%" TextColor="Black"/>
                                         </StackLayout>
 
                                         <StackLayout Orientation="Horizontal">
