@@ -7,12 +7,9 @@
     
     <ContentPage.Content>
         <RelativeLayout
-            VerticalOptions="Fill"
-            HorizontalOptions="Fill"
             x:Name="relativeLayout"
             BackgroundColor="#EBEBEB"
         >
-
             <local:MapView
 				    x:Name="mapView"
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
@@ -20,7 +17,7 @@
                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}" 
                     >
-                </local:MapView>
+            </local:MapView>
 
             <ActivityIndicator x:Name="activityIndicator" Color="#258c76" IsRunning="False" HorizontalOptions="Center" VerticalOptions="Center"
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
@@ -29,27 +26,27 @@
                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}"                                   
                 />
 
-                <Image Source="ic_camera_black.jpg" x:Name="camera"  HeightRequest="65" WidthRequest="65"
+            <Image Source="ic_camera_black.jpg" x:Name="camera"  HeightRequest="65" WidthRequest="65"
                     HorizontalOptions="Center" VerticalOptions="End" Scale="1.3"  
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Camera" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Camera" />
+                </Image.GestureRecognizers>
+            </Image>
 
-                <Image Source="ic_image.jpg" x:Name="imagesLib" HeightRequest="55" WidthRequest="55"
+            <Image Source="ic_image.jpg" x:Name="imagesLib" HeightRequest="55" WidthRequest="55"
                     HorizontalOptions="Center" VerticalOptions="End" Scale="1"
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.33,Constant=0}"
                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}" >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_ImagesLib" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_ImagesLib" />
+                </Image.GestureRecognizers>
+            </Image>
 
         </RelativeLayout>
     </ContentPage.Content>

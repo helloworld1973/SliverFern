@@ -91,7 +91,10 @@ namespace AwesomeMaps
             var item = e.SelectedItem as Species;
             DetailsView detailsView = new DetailsView();
             detailsView.BindingContext = item;
-            ListViewPageAndDetailsPage.Children.Insert(0,detailsView);
+            //ListViewPageAndDetailsPage.Children.Add(detailsView, Constraint.Constant(0));
+            ListViewPageAndDetailsPage.Children.Clear();
+            ListViewPageAndDetailsPage.Children.Add(detailsView);
+            //ListViewPageAndDetailsPage.Children.Insert(0,detailsView);
         }
 
     }

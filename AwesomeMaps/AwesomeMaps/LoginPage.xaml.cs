@@ -23,7 +23,7 @@ namespace AwesomeMaps
         {
             string userName = username.Text;
             string passWord = password.Text;
-            loginbutton.Text = userName + passWord;
+            //loginbutton.Text = userName + passWord;
         }
 
         private async void skipButton_Clicked(object sender, EventArgs e)

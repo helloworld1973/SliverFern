@@ -5,8 +5,12 @@
              BackgroundColor="#EBEBEB">
 
     <ContentView.Content>
-        <StackLayout x:Name="ListViewPageAndDetailsPage" VerticalOptions="Fill" HorizontalOptions="Fill">
-            <ListView x:Name="SpeciesListView" HasUnevenRows="True" ItemSelected="OnSelection">
+        <StackLayout x:Name="ListViewPageAndDetailsPage" >
+            <ListView x:Name="SpeciesListView" HasUnevenRows="True" ItemSelected="OnSelection" 
+                      RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -14,20 +18,20 @@
                             <StackLayout Orientation="Vertical" >
                                 <BoxView Color="#EBEBEB" HeightRequest="1"/>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="120" HeightRequest="120"/>
+                                    <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="220" HeightRequest="220"/>
                                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
 
                                         <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding speciesName}" TextColor="Black"/>
+                                            <Label Text="{Binding speciesName}" TextColor="Black" FontSize="30"/>
                                         </StackLayout>
                                         <StackLayout Orientation="Horizontal">
-                                            <Label Text="Similarity:" TextColor="Black"/>
-                                            <Label Text="{Binding similarity}" TextColor="Black"/>
-                                            <Label Text="%" TextColor="Black"/>
+                                            <Label Text="Similarity:" TextColor="Black" FontSize="20"/>
+                                            <Label Text="{Binding similarity}" TextColor="#696969" FontSize="20"/>
+                                            <Label Text="%" TextColor="Black" FontSize="20"/>
                                         </StackLayout>
 
                                         <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding invasiveOrNotString}" TextColor="Red"/>
+                                            <Label Text="{Binding invasiveOrNotString}" TextColor="Red" FontSize="20"/>
                                         </StackLayout>
 
                                     </StackLayout>

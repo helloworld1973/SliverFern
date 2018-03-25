@@ -155,7 +155,19 @@ namespace AwesomeMaps
                     //relativeLayout.Children.Remove(relativeLayoutSubset);//remove google map
                     //relativeLayout.Children.Add(new IdentifyListView(speciesList));
                     //relativeLayout.Children.Add(new IdentifyListView(speciesList), Constraint.RelativeToParent((parent) => { return parent.X; }), Constraint.RelativeToParent((parent) => { return parent.Height; }));
-                    relativeLayout.Children.Insert(1,new IdentifyListView(speciesList));
+                    //relativeLayout.Children.Clear();
+
+                    IdentifyListView identifyListView = new IdentifyListView(speciesList) {
+
+                        HorizontalOptions = LayoutOptions.FillAndExpand,
+                        VerticalOptions = LayoutOptions.FillAndExpand,
+
+                    };
+                    relativeLayout.Children.Add(identifyListView, Constraint.RelativeToParent((parent) => { return parent.X; }),
+                                                                           Constraint.RelativeToParent((parent) => { return parent.Y; }),
+                                                                           Constraint.RelativeToParent((parent) => { return parent.Width; }),
+                                                                           Constraint.RelativeToParent((parent) => { return parent.Height; }));
+                    //relativeLayout.Children.Insert(1,new IdentifyListView(speciesList));
                 }
                 else
                 {
