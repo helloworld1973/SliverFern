@@ -5,43 +5,48 @@
              BackgroundColor="#EBEBEB">
 
     <ContentView.Content>
-        <StackLayout x:Name="ListViewPageAndDetailsPage" >
+        <StackLayout x:Name="ListViewPageAndDetailsPage" Spacing="0">
+            
             <ListView x:Name="SpeciesListView" HasUnevenRows="True" ItemSelected="OnSelection" 
                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1,Constant=0}"
                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1,Constant=0}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
 
-                            <StackLayout Orientation="Vertical" >
-                                <BoxView Color="#EBEBEB" HeightRequest="1"/>
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="220" HeightRequest="220"/>
-                                    <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                                <StackLayout Orientation="Vertical" >
+                                    <BoxView Color="#EBEBEB" HeightRequest="1"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="150" HeightRequest="150"/>
+                                        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
 
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding speciesName}" TextColor="Black" FontSize="30"/>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="{Binding speciesName}" TextColor="Black" FontSize="15"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Similarity:" TextColor="Black" FontSize="12"/>
+                                                <Label Text="{Binding similarity}" TextColor="#696969" FontSize="12"/>
+                                                <Label Text="%" TextColor="Black" FontSize="12"/>
+                                            </StackLayout>
+
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="{Binding invasiveOrNotString}" TextColor="Red" FontSize="12"/>
+                                            </StackLayout>
+
                                         </StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="Similarity:" TextColor="Black" FontSize="20"/>
-                                            <Label Text="{Binding similarity}" TextColor="#696969" FontSize="20"/>
-                                            <Label Text="%" TextColor="Black" FontSize="20"/>
-                                        </StackLayout>
-
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding invasiveOrNotString}" TextColor="Red" FontSize="20"/>
-                                        </StackLayout>
-
                                     </StackLayout>
                                 </StackLayout>
-                            </StackLayout>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            <StackLayout x:Name="ButtonBack" HeightRequest="37" Margin="0,0,0,10">
+            <Button Text="BACK" Clicked="GoBackButtonPressed" FontSize="16" BackgroundColor="Transparent" TextColor="#258c76" 
+                        HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
         </StackLayout>
     </ContentView.Content>
 </ContentView>

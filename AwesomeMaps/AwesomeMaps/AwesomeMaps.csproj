@@ -38,6 +38,9 @@
     <Compile Include="ActivityPage.xaml.cs">
       <DependentUpon>ActivityPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ActivityView.xaml.cs">
+      <DependentUpon>ActivityView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -63,6 +66,9 @@
     <Compile Include="News.cs" />
     <Compile Include="NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewsView.xaml.cs">
+      <DependentUpon>NewsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="SPECIES_LA_LONG.cs" />
     <Compile Include="Species.cs" />
@@ -205,6 +211,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="IndividualHistory.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NewsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActivityView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

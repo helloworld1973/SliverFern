@@ -64,3 +64,5 @@ D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Relea
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.pdb
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.IndividualHistory.xaml.g.cs
 D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.csprojResolveAssemblyReference.cache
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.NewsView.xaml.g.cs
+D:\VS2017Projects\XamarinFormsGoogleMap-master\AwesomeMaps\AwesomeMaps\obj\Release\AwesomeMaps.ActivityView.xaml.g.cs

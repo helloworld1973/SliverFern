@@ -7,43 +7,47 @@
   <ContentView.Content>
         <ScrollView>
             <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="#EBEBEB">
-            <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300" HeightRequest="300"/>
-            
-            <Label Text="{Binding speciesName}" FontSize="25" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+
+                <Image Source="{Binding imageAddr}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300" HeightRequest="300" />
+
+                <Label Text="{Binding speciesName}" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Also Known As:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-                    <Label Text="{Binding alsoKnownAs}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                    <Label Text="Also Known As:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                    <Label Text="{Binding alsoKnownAs}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
                 </StackLayout>
                 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Family:" FontSize="20"  TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-                    <Label Text="{Binding family}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                    <Label Text="Family:" FontSize="17"  TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                    <Label Text="{Binding family}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
                 </StackLayout>
                 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Origin:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-                    <Label Text="{Binding origin}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                    <Label Text="Origin:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                    <Label Text="{Binding origin}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
                 </StackLayout>
 
-            <Label Text="Habitats:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-            <Label Text="{Binding habitats}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="460"/>
+                <Label Text="Habitats:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                <Label Text="{Binding habitats}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="300"/>
 
-            <Label Text="Dispersal:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-            <Label Text="{Binding dispersal}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="460"/>
+                <Label Text="Dispersal:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                <Label Text="{Binding dispersal}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="300"/>
             
-            <Label Text="Description:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-            <Label Text="{Binding generalDescription}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="460"/>
+                <Label Text="Description:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                <Label Text="{Binding generalDescription}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="300"/>
 
-            <Label Text="Impact On Environment:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-            <Label Text="{Binding impactOnEnvironment}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="460"/>
+                <Label Text="Impact On Environment:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                <Label Text="{Binding impactOnEnvironment}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="300"/>
 
-            <Label Text="Site Management:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-            <Label Text="{Binding siteManagement}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="460"/>
+                <Label Text="Site Management:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                <Label Text="{Binding siteManagement}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="300"/>
 
-            <Label Text="Recommended Approaches:" FontSize="20" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
-            <Label Text="{Binding recommendedApproaches}" FontSize="20" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="460"/>
-        </StackLayout>
+                <Label Text="Recommended Approaches:" FontSize="17" TextColor="Black" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40"/>
+                <Label Text="{Binding recommendedApproaches}" FontSize="17" TextColor="#696969" HorizontalOptions="Start"  VerticalOptions="Center" TranslationX="40" WidthRequest="300"/>
+
+                <Button Text="BACK" Clicked="GoBackButtonPressed" FontSize="16" BackgroundColor="Transparent" TextColor="#258c76" HeightRequest="37" 
+                        HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
         </ScrollView>
     </ContentView.Content>
 </ContentView>

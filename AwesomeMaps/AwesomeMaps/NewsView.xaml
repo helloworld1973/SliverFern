@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeMaps.NewsView">
+  <ContentView.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#EBEBEB" Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill" Spacing="0">
+
+                <Image Source="new1.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 10, 10, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="new2.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew2" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="new3.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew3" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="new4.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew4" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="new5.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew5" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="new6.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew6" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="new7.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew7" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="new8.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew8" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="new9.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 0, 10, 10">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedNew9" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+        </ScrollView>
+  </ContentView.Content>
+</ContentView>
